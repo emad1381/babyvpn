@@ -8,17 +8,17 @@ class ConfigParser {
       final uri = Uri.parse(link);
       final uuid = uri.userInfo;
       final address = uri.host;
-      final port = uri.port;
-      final alias = Uri.decodeComponent(uri.fragment.isNotEmpty ? uri.fragment : "VLess Config");
+      final port = uri.hasPort ? uri.port : 443;
+      final alias = uri.fragment.isNotEmpty ? Uri.decodeComponent(uri.fragment) : "VLess Config";
 
       final net = uri.queryParameters['type'] ?? 'tcp';
       final security = uri.queryParameters['security'] ?? 'none';
-      final path = uri.queryParameters['path'] ?? '/';
-      final host = uri.queryParameters['host'] ?? '';
-      final sniParam = uri.queryParameters['sni'] ?? '';
+      final path = Uri.decodeComponent(uri.queryParameters['path'] ?? '/');
+      final host = Uri.decodeComponent(uri.queryParameters['host'] ?? '');
+      final sniParam = Uri.decodeComponent(uri.queryParameters['sni'] ?? '');
       final fp = uri.queryParameters['fp'] ?? '';
       final alpnStr = uri.queryParameters['alpn'] ?? '';
-      final serviceName = uri.queryParameters['serviceName'] ?? '';
+      final serviceName = Uri.decodeComponent(uri.queryParameters['serviceName'] ?? '');
       final headerType = uri.queryParameters['headerType'] ?? 'none';
       final mode = uri.queryParameters['mode'] ?? 'auto';
 
@@ -128,17 +128,17 @@ class ConfigParser {
       final uri = Uri.parse(link);
       final password = uri.userInfo;
       final address = uri.host;
-      final port = uri.port;
-      final alias = Uri.decodeComponent(uri.fragment.isNotEmpty ? uri.fragment : "Trojan Config");
+      final port = uri.hasPort ? uri.port : 443;
+      final alias = uri.fragment.isNotEmpty ? Uri.decodeComponent(uri.fragment) : "Trojan Config";
 
       final net = uri.queryParameters['type'] ?? 'tcp';
       final security = uri.queryParameters['security'] ?? 'none';
-      final path = uri.queryParameters['path'] ?? '/';
-      final host = uri.queryParameters['host'] ?? '';
-      final sniParam = uri.queryParameters['sni'] ?? '';
+      final path = Uri.decodeComponent(uri.queryParameters['path'] ?? '/');
+      final host = Uri.decodeComponent(uri.queryParameters['host'] ?? '');
+      final sniParam = Uri.decodeComponent(uri.queryParameters['sni'] ?? '');
       final fp = uri.queryParameters['fp'] ?? '';
       final alpnStr = uri.queryParameters['alpn'] ?? '';
-      final serviceName = uri.queryParameters['serviceName'] ?? '';
+      final serviceName = Uri.decodeComponent(uri.queryParameters['serviceName'] ?? '');
       final headerType = uri.queryParameters['headerType'] ?? 'none';
       final mode = uri.queryParameters['mode'] ?? 'auto';
 
@@ -243,10 +243,25 @@ class ConfigParser {
     
     try {
       String b64 = link.substring(8);
-      int padding = 4 - (b64.length % 4);
-      if (padding < 4) b64 += "=" * padding;
       
-      String jsonStr = utf8.decode(base64.decode(b64));
+      // Clean up base64 string
+      b64 = b64.replaceAll(RegExp(r'\s+'), '');
+      
+      // Add missing padding
+      int padding = b64.length % 4;
+      if (padding > 0) {
+        b64 += '=' * (4 - padding);
+      }
+      
+      // Safely decode
+      String jsonStr;
+      try {
+        jsonStr = utf8.decode(base64Decode(b64));
+      } catch (e) {
+        // Fallback to URL-safe base64 decode if standard fails
+        jsonStr = utf8.decode(base64UrlDecode(b64));
+      }
+      
       Map<String, dynamic> data = jsonDecode(jsonStr);
 
       String add = data["add"]?.toString() ?? "";
