@@ -90,36 +90,28 @@ class _MainScreenState extends State<MainScreen> {
       return;
     }
 
-    String text = data.text!.trim();
-    List<String> lines = text.split(RegExp(r'[\n\r]+'));
-    int addedCount = 0;
+    String link = data.text!.trim();
+    Map<String, dynamic>? parsed;
     
-    for (String line in lines) {
-      line = line.trim();
-      if (line.isEmpty) continue;
-      
-      Map<String, dynamic>? parsed;
-      if (line.startsWith("vless://")) {
-        parsed = ConfigParser.parseVless(line);
-      } else if (line.startsWith("vmess://")) {
-        parsed = ConfigParser.parseVmess(line);
-      } else if (line.startsWith("trojan://")) {
-        parsed = ConfigParser.parseTrojan(line);
-      }
-      
-      if (parsed != null) {
-        setState(() {
-          _configs.add(parsed!);
-        });
-        addedCount++;
-      }
+    if (link.startsWith("vless://")) {
+      parsed = ConfigParser.parseVless(link);
+    } else if (link.startsWith("vmess://")) {
+      parsed = ConfigParser.parseVmess(link);
+    } else if (link.startsWith("trojan://")) {
+      parsed = ConfigParser.parseTrojan(link);
+    } else {
+      _showSnack("Invalid link format. Supported: vless, vmess, trojan.");
+      return;
     }
 
-    if (addedCount > 0) {
+    if (parsed != null) {
+      setState(() {
+        _configs.add(parsed!);
+      });
       _saveConfigs();
-      _showSnack("Added $addedCount configuration(s).");
+      _showSnack("Added: ${parsed['alias']}");
     } else {
-      _showSnack("Failed to parse any valid configuration from clipboard.");
+      _showSnack("Failed to parse the configuration.");
     }
   }
 
@@ -167,11 +159,15 @@ class _MainScreenState extends State<MainScreen> {
         }
       };
 
-      await _flutterV2ray.startV2Ray(
-        remark: cfg['alias'],
-        config: jsonEncode(fullConfig),
-        proxyOnly: false,
-      );
+      if (await _flutterV2ray.requestPermission()) {
+        await _flutterV2ray.startV2Ray(
+          remark: cfg['alias'],
+          config: jsonEncode(fullConfig),
+          proxyOnly: false,
+        );
+      } else {
+        _showSnack("VPN permission denied.");
+      }
     }
   }
 
