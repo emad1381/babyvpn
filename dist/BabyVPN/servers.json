@@ -1,0 +1,80 @@
+[
+    {
+        "alias": "\ud83d\udca6 1 - \ud83d\udd17 VLESS - Domain : 443",
+        "link": "vless://90d41578-2041-4b68-a8eb-18f22acab21a@chatgpt.com:443?encryption=none&security=tls&sni=de-full.privateip.net&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=undefined&path=%2Fws#%F0%9F%92%A6%201%20-%20%F0%9F%94%97%20VLESS%20-%20Domain%20%3A%20443",
+        "outbound": {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "chatgpt.com",
+                        "port": 443,
+                        "users": [
+                            {
+                                "id": "90d41578-2041-4b68-a8eb-18f22acab21a",
+                                "encryption": "none",
+                                "level": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "tlsSettings": {
+                    "serverName": "de-full.privateip.net",
+                    "allowInsecure": false,
+                    "fingerprint": "chrome"
+                },
+                "wsSettings": {
+                    "path": "/ws",
+                    "headers": {
+                        "Host": "undefined"
+                    }
+                }
+            }
+        },
+        "is_pinging_active": false,
+        "last_ping": "Fail"
+    },
+    {
+        "alias": "\ud83d\udca6 Best Ping F \ud83d\ude80",
+        "link": "vless://c3691413-09d6-4289-a2d0-7b5777a31abe@chatgpt.com:443?encryption=none&security=tls&sni=bRO.NIKialI823.WorkErs.deV&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=bro.nikiali823.workers.dev&path=%2FeyJqdW5rIjoibE95S1FVVTZYczdhNEh2SiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjQ1LjE0Ny4xOTkuMTMiXX0%3D%3Fed%3D2560#%F0%9F%92%A6%20Best%20Ping%20F%20%F0%9F%9A%80",
+        "outbound": {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "chatgpt.com",
+                        "port": 443,
+                        "users": [
+                            {
+                                "id": "c3691413-09d6-4289-a2d0-7b5777a31abe",
+                                "encryption": "none",
+                                "level": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "tlsSettings": {
+                    "serverName": "bRO.NIKialI823.WorkErs.deV",
+                    "allowInsecure": false,
+                    "fingerprint": "chrome"
+                },
+                "wsSettings": {
+                    "path": "/eyJqdW5rIjoibE95S1FVVTZYczdhNEh2SiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjQ1LjE0Ny4xOTkuMTMiXX0=?ed=2560",
+                    "headers": {
+                        "Host": "bro.nikiali823.workers.dev"
+                    }
+                }
+            }
+        },
+        "is_pinging_active": false,
+        "last_ping": 1096
+    }
+]

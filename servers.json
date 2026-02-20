@@ -1,0 +1,216 @@
+[
+    {
+        "alias": "omid cf",
+        "link": "vless://b81bb6e4-e340-4344-a9c5-2a8fb706b062@ccf.tehranhost.online:443?encryption=none&security=tls&sni=cfnew.tehranhost.online&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=cfnew.tehranhost.online&path=%2F%3Fed%3D2048#omid%20cf",
+        "outbound": {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "ccf.tehranhost.online",
+                        "port": 443,
+                        "users": [
+                            {
+                                "id": "b81bb6e4-e340-4344-a9c5-2a8fb706b062",
+                                "encryption": "none",
+                                "level": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "tlsSettings": {
+                    "serverName": "cfnew.tehranhost.online",
+                    "allowInsecure": false,
+                    "fingerprint": "chrome"
+                },
+                "wsSettings": {
+                    "path": "/?ed=2048",
+                    "headers": {
+                        "Host": "cfnew.tehranhost.online"
+                    }
+                }
+            }
+        },
+        "is_pinging_active": false,
+        "last_ping": "Fail"
+    },
+    {
+        "alias": "baby-443-xhttp",
+        "link": "vless://b81bb6e4-e340-4344-a9c5-2a8fb706b062@ccf.tehranhost.online:443?encryption=none&security=tls&sni=cfnew.tehranhost.online&fp=chrome&insecure=0&allowInsecure=0&type=xhttp&host=cfnew.tehranhost.online&path=%2Fb81bb6e4&mode=stream-one#baby-443-xhttp",
+        "outbound": {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "ccf.tehranhost.online",
+                        "port": 443,
+                        "users": [
+                            {
+                                "id": "b81bb6e4-e340-4344-a9c5-2a8fb706b062",
+                                "encryption": "none",
+                                "level": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "serverName": "cfnew.tehranhost.online",
+                    "allowInsecure": false,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        "is_pinging_active": false,
+        "last_ping": "Fail"
+    },
+    {
+        "alias": "ServerStar1-37TM",
+        "link": "vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlNlcnZlclN0YXIxLTM3VE0iLA0KICAiYWRkIjogImdlci5zZXJ2ZXItdmlwLmNvbSIsDQogICJwb3J0IjogIjcwODEiLA0KICAiaWQiOiAiZGI5MzhlMWEtOTY5My00Mzg3LTkzMzItODMxODBhM2FiNGJkIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ0Y3AiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiIiwNCiAgInBhdGgiOiAiLyIsDQogICJ0bHMiOiAiIiwNCiAgInNuaSI6ICIiLA0KICAiYWxwbiI6ICIiLA0KICAiZnAiOiAiIiwNCiAgImluc2VjdXJlIjogIjAiDQp9",
+        "outbound": {
+            "protocol": "vmess",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "ger.server-vip.com",
+                        "port": 7081,
+                        "users": [
+                            {
+                                "id": "db938e1a-9693-4387-9332-83180a3ab4bd",
+                                "alterId": 0,
+                                "security": "auto",
+                                "level": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": ""
+            },
+            "mux": {
+                "enabled": true,
+                "concurrency": 8
+            }
+        },
+        "is_pinging_active": false,
+        "last_ping": 1376
+    },
+    {
+        "alias": "\u539f\u751f\u5730\u5740-443-xhttp",
+        "link": "vless://b81bb6e4-e340-4344-a9c5-2a8fb706b062@cfnew.tehranhost.online:443?encryption=none&security=tls&sni=cfnew.tehranhost.online&fp=chrome&insecure=0&allowInsecure=0&type=xhttp&host=cfnew.tehranhost.online&path=%2Fb81bb6e4&mode=stream-one#%E5%8E%9F%E7%94%9F%E5%9C%B0%E5%9D%80-443-xhttp",
+        "outbound": {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "cfnew.tehranhost.online",
+                        "port": 443,
+                        "users": [
+                            {
+                                "id": "b81bb6e4-e340-4344-a9c5-2a8fb706b062",
+                                "encryption": "none",
+                                "level": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "serverName": "cfnew.tehranhost.online",
+                    "allowInsecure": false,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        "is_pinging_active": false,
+        "last_ping": "Fail"
+    },
+    {
+        "alias": "\u539f\u751f\u5730\u5740-443-Trojan-WS-TLS",
+        "link": "trojan://sbdsbdbdgbdgbdg@cfnew.tehranhost.online:443?security=tls&sni=cfnew.tehranhost.online&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=cfnew.tehranhost.online&path=%2F%3Fed%3D2048#%E5%8E%9F%E7%94%9F%E5%9C%B0%E5%9D%80-443-Trojan-WS-TLS",
+        "outbound": {
+            "protocol": "trojan",
+            "settings": {
+                "servers": [
+                    {
+                        "address": "cfnew.tehranhost.online",
+                        "port": 443,
+                        "password": "sbdsbdbdgbdgbdg",
+                        "level": 0
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "tlsSettings": {
+                    "serverName": "cfnew.tehranhost.online",
+                    "allowInsecure": false,
+                    "fingerprint": "chrome"
+                },
+                "wsSettings": {
+                    "path": "/?ed=2048",
+                    "headers": {
+                        "Host": "cfnew.tehranhost.online"
+                    }
+                }
+            }
+        },
+        "is_pinging_active": false,
+        "last_ping": "Fail"
+    },
+    {
+        "alias": "\u539f\u751f\u5730\u5740-443-xhttp",
+        "link": "vless://b81bb6e4-e340-4344-a9c5-2a8fb706b062@cfnew.tehranhost.online:443?encryption=none&security=tls&sni=cfnew.tehranhost.online&fp=chrome&insecure=0&allowInsecure=0&type=xhttp&host=cfnew.tehranhost.online&path=%2Fb81bb6e4&mode=stream-one#%E5%8E%9F%E7%94%9F%E5%9C%B0%E5%9D%80-443-xhttp",
+        "outbound": {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "cfnew.tehranhost.online",
+                        "port": 443,
+                        "users": [
+                            {
+                                "id": "b81bb6e4-e340-4344-a9c5-2a8fb706b062",
+                                "encryption": "none",
+                                "level": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "serverName": "cfnew.tehranhost.online",
+                    "allowInsecure": false,
+                    "fingerprint": "chrome"
+                },
+                "xhttpSettings": {
+                    "mode": "stream-one",
+                    "path": "/b81bb6e4",
+                    "host": "cfnew.tehranhost.online"
+                }
+            },
+            "mux": {
+                "enabled": true,
+                "concurrency": 8
+            }
+        },
+        "is_pinging_active": false,
+        "last_ping": "Fail"
+    }
+]

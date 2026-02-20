@@ -1,0 +1,961 @@
+Xray 26.2.6 (Xray, Penetrates Everything.) 12ee51e (go1.25.7 windows/amd64)
+A unified platform for anti-censorship.
+2026/02/20 19:20:08.085784 [Info] infra/conf/serial: Reading config: &{Name:E:\desktop\my vpn\config.json Format:json}
+2026/02/20 19:20:08.089697 [Warning] common/errors: The feature WebSocket transport (with ALPN http/1.1, etc.) is deprecated, not recommended for using and might be removed. Please migrate to XHTTP H2 & H3 as soon as possible.
+2026/02/20 19:20:08.089697 [Warning] common/errors: This feature "host" in "headers" is deprecated, will be removed soon and being migrated to independent "host". Please update your config(s) according to release note and documentation before removal.
+2026/02/20 19:20:08.089697 [Warning] common/errors: The feature Trojan (with no Flow, etc.) is deprecated, not recommended for using and might be removed. Please migrate to VLESS with Flow & Seed as soon as possible.
+2026/02/20 19:20:08.094524 [Warning] core: Xray 26.2.6 started
+2026/02/20 19:20:10.448177 from 127.0.0.1:10501 accepted //alive.github.com:443
+2026/02/20 19:20:12.814622 from 127.0.0.1:10503 accepted //149.154.165.120:443
+2026/02/20 19:20:12.814622 from 127.0.0.1:10512 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:12.824165 from 127.0.0.1:10516 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:12.825920 from 127.0.0.1:10504 accepted //149.154.165.120:443
+2026/02/20 19:20:12.831802 from 127.0.0.1:10505 accepted //149.154.175.53:443
+2026/02/20 19:20:12.831802 from 127.0.0.1:10519 accepted http://149.154.175.53:80/api
+2026/02/20 19:20:12.841621 from 127.0.0.1:10522 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:12.841621 from 127.0.0.1:10506 accepted //149.154.165.120:443
+2026/02/20 19:20:12.849294 from 127.0.0.1:10525 accepted http://149.154.167.92:80/api
+2026/02/20 19:20:12.849294 from 127.0.0.1:10507 accepted //149.154.167.92:443
+2026/02/20 19:20:12.860039 from 127.0.0.1:10508 accepted //149.154.165.120:443
+2026/02/20 19:20:12.863067 from 127.0.0.1:10528 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:12.865994 from 127.0.0.1:10531 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:12.869572 from 127.0.0.1:10509 accepted //149.154.165.120:443
+2026/02/20 19:20:12.874309 from 127.0.0.1:10534 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:12.875713 from 127.0.0.1:10510 accepted //149.154.165.120:443
+2026/02/20 19:20:12.878873 from 127.0.0.1:10537 accepted http://149.154.167.91:80/api
+2026/02/20 19:20:12.879386 from 127.0.0.1:10511 accepted //149.154.167.91:443
+2026/02/20 19:20:12.891682 from 127.0.0.1:10541 accepted http://149.154.167.91:80/api
+2026/02/20 19:20:12.900227 from 127.0.0.1:10543 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:12.902319 from 127.0.0.1:10515 accepted //149.154.167.91:443
+2026/02/20 19:20:12.902822 from 127.0.0.1:10540 accepted //149.154.165.120:443
+2026/02/20 19:20:13.704725 from 127.0.0.1:10547 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:15.700883 from 127.0.0.1:9387 accepted http://149.154.167.92:80/api
+2026/02/20 19:20:15.708525 from 127.0.0.1:9388 accepted http://149.154.167.92:80/api
+2026/02/20 19:20:15.748942 from 127.0.0.1:9391 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:15.752336 from 127.0.0.1:9393 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:15.948714 from 127.0.0.1:9395 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:15.951368 from 127.0.0.1:9397 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:17.764303 from 127.0.0.1:4782 accepted //edge-chat.facebook.com:443
+2026/02/20 19:20:19.762101 from 127.0.0.1:4785 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:19.762101 from 127.0.0.1:4784 accepted //149.154.165.120:443
+2026/02/20 19:20:19.962190 from 127.0.0.1:4788 accepted //149.154.165.120:443
+2026/02/20 19:20:19.962190 from 127.0.0.1:4789 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:20.048052 from 127.0.0.1:4792 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:20.053706 from 127.0.0.1:4794 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:20.765727 from 127.0.0.1:4797 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:20.766876 from 127.0.0.1:4796 accepted //149.154.165.120:443
+2026/02/20 19:20:23.293828 from 127.0.0.1:2203 accepted //web-chat-e2ee.instagram.com:443
+2026/02/20 19:20:24.607271 from 127.0.0.1:2205 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:25.871758 from 127.0.0.1:2207 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:28.049919 [Error] [3331773694] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:20:28.131107 from 127.0.0.1:10768 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:28.929225 from 127.0.0.1:11351 accepted //edge-chat.instagram.com:443
+2026/02/20 19:20:28.929754 from 127.0.0.1:1761 accepted //edge-chat.instagram.com:443
+2026/02/20 19:20:30.946697 [Error] [3125984349] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:20:30.946697 [Warning] [3125984349] proxy/http: failed to read response from 149.154.165.120:80 > unexpected EOF
+2026/02/20 19:20:31.398525 from 127.0.0.1:1766 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:31.398525 from 127.0.0.1:1765 accepted //149.154.165.120:443
+2026/02/20 19:20:32.117689 from 127.0.0.1:1769 accepted //149.154.165.120:443
+2026/02/20 19:20:32.117689 from 127.0.0.1:1770 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:32.329762 from 127.0.0.1:1774 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:32.330298 from 127.0.0.1:1773 accepted //149.154.165.120:443
+2026/02/20 19:20:32.406771 from 127.0.0.1:1778 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:32.407836 from 127.0.0.1:1777 accepted //149.154.165.120:443
+2026/02/20 19:20:35.585552 from 127.0.0.1:1781 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:35.590086 from 127.0.0.1:1783 accepted http://149.154.165.120:80/api
+2026/02/20 19:20:36.934019 from 127.0.0.1:11936 accepted //edge-chat.instagram.com:443
+2026/02/20 19:20:40.118622 [Warning] [912908902] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:20:43.261670 from 127.0.0.1:11938 accepted http://149.154.167.92:80/api
+2026/02/20 19:20:46.466197 from 127.0.0.1:11943 accepted http://149.154.167.92:80/api
+2026/02/20 19:20:49.121533 from 127.0.0.1:13978 accepted //edge-chat.instagram.com:443
+2026/02/20 19:20:51.472207 from 127.0.0.1:11636 accepted //edge-chat.instagram.com:443
+2026/02/20 19:20:51.955227 from 127.0.0.1:4216 accepted //www.instagram.com:443
+2026/02/20 19:20:53.831331 from 127.0.0.1:5168 accepted //www.instagram.com:443
+2026/02/20 19:20:55.235884 from 127.0.0.1:6988 accepted //www.instagram.com:443
+2026/02/20 19:20:58.654615 from 127.0.0.1:6990 accepted http://149.154.167.92:80/api
+2026/02/20 19:21:01.828503 from 127.0.0.1:6992 accepted http://149.154.167.92:80/api
+2026/02/20 19:21:06.655547 [Warning] [3293210139] proxy/http: failed to read response from 149.154.167.92:80 > io: read/write on closed pipe
+2026/02/20 19:21:06.670092 from 127.0.0.1:6995 accepted http://149.154.167.92:80/api
+2026/02/20 19:21:06.670596 from 127.0.0.1:6994 accepted //149.154.167.92:443
+2026/02/20 19:21:09.829132 [Warning] [33054842] proxy/http: failed to read response from 149.154.167.92:80 > io: read/write on closed pipe
+2026/02/20 19:21:13.556539 from 127.0.0.1:6999 accepted http://149.154.175.53:80/api
+2026/02/20 19:21:13.557043 from 127.0.0.1:6998 accepted //149.154.175.53:443
+2026/02/20 19:21:16.084764 from 127.0.0.1:7002 accepted //inputsuggestions.msdxcdn.microsoft.com:443
+2026/02/20 19:21:16.084764 from 127.0.0.1:7003 accepted //inputsuggestions.msdxcdn.microsoft.com:443
+2026/02/20 19:21:16.899482 from 127.0.0.1:7006 accepted //inputsuggestions.msdxcdn.microsoft.com:443
+2026/02/20 19:21:18.342800 from 127.0.0.1:7237 accepted //api.github.com:443
+2026/02/20 19:21:18.866580 from 127.0.0.1:2495 accepted //collector.github.com:443
+2026/02/20 19:21:18.937909 from 127.0.0.1:1249 accepted //www.google-analytics.com:443
+2026/02/20 19:21:19.169405 from 127.0.0.1:9960 accepted //api.github.com:443
+2026/02/20 19:21:20.631961 from 127.0.0.1:9967 accepted //inputsuggestions.msdxcdn.microsoft.com:443
+2026/02/20 19:21:21.557312 [Warning] [513455383] proxy/http: failed to read response from 149.154.175.53:80 > io: read/write on closed pipe
+2026/02/20 19:21:23.123530 from 127.0.0.1:3488 accepted //www.instagram.com:443
+2026/02/20 19:21:23.439618 from 127.0.0.1:14972 accepted //www.instagram.com:443
+2026/02/20 19:21:24.898818 from 127.0.0.1:12395 accepted //static.cdninstagram.com:443
+2026/02/20 19:21:25.189563 from 127.0.0.1:12648 accepted //edge-chat.facebook.com:443
+2026/02/20 19:21:25.207814 from 127.0.0.1:3146 accepted //static.cdninstagram.com:443
+2026/02/20 19:21:25.207814 from 127.0.0.1:8718 accepted //static.cdninstagram.com:443
+2026/02/20 19:21:25.208708 from 127.0.0.1:5703 accepted //static.cdninstagram.com:443
+2026/02/20 19:21:25.209800 from 127.0.0.1:13748 accepted //static.cdninstagram.com:443
+2026/02/20 19:21:25.212236 from 127.0.0.1:14982 accepted //static.cdninstagram.com:443
+2026/02/20 19:21:27.164945 from 127.0.0.1:10347 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:21:27.483804 from 127.0.0.1:12103 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:21:27.484457 from 127.0.0.1:10967 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:21:27.485086 from 127.0.0.1:12720 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:21:27.486656 from 127.0.0.1:7812 accepted //instagram.fidr4-2.fna.fbcdn.net:443
+2026/02/20 19:21:27.487252 from 127.0.0.1:1889 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:21:27.487252 from 127.0.0.1:2397 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:21:27.624270 from 127.0.0.1:6379 accepted //static.cdninstagram.com:443
+2026/02/20 19:21:30.683146 from 127.0.0.1:12189 accepted //gateway.instagram.com:443
+2026/02/20 19:21:30.810402 from 127.0.0.1:9812 accepted //edge-chat.instagram.com:443
+2026/02/20 19:21:31.498490 from 127.0.0.1:3615 accepted //edge-chat.facebook.com:443
+2026/02/20 19:21:34.072193 [Error] [4274349016] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:21:34.074361 from 127.0.0.1:6016 accepted //collector.github.com:443
+2026/02/20 19:21:39.466821 from 127.0.0.1:7672 accepted //graph.instagram.com:443
+2026/02/20 19:21:39.906854 from 127.0.0.1:13179 accepted //instagram.fidr4-2.fna.fbcdn.net:443
+2026/02/20 19:21:43.188945 from 127.0.0.1:6593 accepted //accounts.google.com:443
+2026/02/20 19:21:44.913276 from 127.0.0.1:4959 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:21:45.219598 from 127.0.0.1:8719 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:21:51.688557 from 127.0.0.1:5850 accepted //gateway.instagram.com:443
+2026/02/20 19:21:55.679686 from 127.0.0.1:10727 accepted http://ipv6.msftconnecttest.com/connecttest.txt
+2026/02/20 19:21:55.680924 from 127.0.0.1:10729 accepted http://www.msftconnecttest.com/connecttest.txt
+2026/02/20 19:21:56.795964 from 127.0.0.1:10733 accepted http://149.154.165.120:80/api
+2026/02/20 19:21:56.796543 from 127.0.0.1:10732 accepted //149.154.165.120:443
+2026/02/20 19:21:59.691709 from 127.0.0.1:10574 accepted //gateway.instagram.com:443
+2026/02/20 19:22:00.237756 from 127.0.0.1:5561 accepted //www.instagram.com:443
+2026/02/20 19:22:00.548162 from 127.0.0.1:4034 accepted //www.instagram.com:443
+2026/02/20 19:22:00.548162 from 127.0.0.1:6317 accepted //www.instagram.com:443
+2026/02/20 19:22:00.548709 from 127.0.0.1:13290 accepted //www.instagram.com:443
+2026/02/20 19:22:00.549237 from 127.0.0.1:3995 accepted //www.instagram.com:443
+2026/02/20 19:22:00.549237 from 127.0.0.1:8981 accepted //www.instagram.com:443
+2026/02/20 19:22:07.882764 from 127.0.0.1:13297 accepted http://149.154.175.53:80/api
+2026/02/20 19:22:07.883528 from 127.0.0.1:13296 accepted //149.154.175.53:443
+2026/02/20 19:22:08.752637 from 127.0.0.1:10113 accepted //static.cdninstagram.com:443
+2026/02/20 19:22:08.881522 from 127.0.0.1:10116 accepted http://149.154.175.53:80/api
+2026/02/20 19:22:08.882045 from 127.0.0.1:10115 accepted //149.154.175.53:443
+2026/02/20 19:22:09.071426 from 127.0.0.1:9134 accepted //static.cdninstagram.com:443
+2026/02/20 19:22:09.071985 from 127.0.0.1:11016 accepted //static.cdninstagram.com:443
+2026/02/20 19:22:09.071985 from 127.0.0.1:8934 accepted //static.cdninstagram.com:443
+2026/02/20 19:22:09.073541 from 127.0.0.1:6987 accepted //static.cdninstagram.com:443
+2026/02/20 19:22:09.073541 from 127.0.0.1:14740 accepted //static.cdninstagram.com:443
+2026/02/20 19:22:09.325274 from 127.0.0.1:3958 accepted //www.instagram.com:443
+2026/02/20 19:22:09.383794 from 127.0.0.1:10363 accepted //www.instagram.com:443
+2026/02/20 19:22:10.885947 from 127.0.0.1:10366 accepted http://149.154.175.53:80/api
+2026/02/20 19:22:10.887741 from 127.0.0.1:10365 accepted //149.154.175.53:443
+2026/02/20 19:22:12.287948 from 127.0.0.1:11257 accepted //www.instagram.com:443
+2026/02/20 19:22:12.307161 from 127.0.0.1:7365 accepted //www.instagram.com:443
+2026/02/20 19:22:12.321396 [Error] [1496324550] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:13298->188.114.97.3:443: wsarecv: An existing connection was forcibly closed by the remote host.
+2026/02/20 19:22:12.328320 [Error] [1938110375] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:13299->188.114.97.3:443: wsarecv: An existing connection was forcibly closed by the remote host.
+2026/02/20 19:22:12.328320 [Warning] [1938110375] proxy/http: failed to read response from 149.154.175.53:80 > io: read/write on closed pipe
+2026/02/20 19:22:12.419400 from 127.0.0.1:11405 accepted //www.instagram.com:443
+2026/02/20 19:22:12.438582 from 127.0.0.1:12233 accepted //www.instagram.com:443
+2026/02/20 19:22:12.690825 from 127.0.0.1:2438 accepted //gateway.instagram.com:443
+2026/02/20 19:22:13.544604 from 127.0.0.1:2441 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:13.545636 from 127.0.0.1:2440 accepted //149.154.165.120:443
+2026/02/20 19:22:15.364913 from 127.0.0.1:2451 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:15.364913 from 127.0.0.1:2444 accepted //149.154.165.120:443
+2026/02/20 19:22:15.370911 from 127.0.0.1:2454 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:15.371424 from 127.0.0.1:2445 accepted //149.154.165.120:443
+2026/02/20 19:22:15.377603 from 127.0.0.1:2457 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:15.377603 from 127.0.0.1:2446 accepted //149.154.165.120:443
+2026/02/20 19:22:15.384601 from 127.0.0.1:2461 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:15.385160 from 127.0.0.1:2447 accepted //149.154.165.120:443
+2026/02/20 19:22:15.390306 from 127.0.0.1:2470 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:15.390306 from 127.0.0.1:2448 accepted //149.154.165.120:443
+2026/02/20 19:22:15.397647 from 127.0.0.1:2449 accepted //149.154.165.120:443
+2026/02/20 19:22:15.397647 from 127.0.0.1:2473 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:15.403839 from 127.0.0.1:2477 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:15.405477 from 127.0.0.1:2450 accepted //149.154.165.120:443
+2026/02/20 19:22:15.649387 [Error] [3548220955] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:22:16.335064 from 127.0.0.1:2480 accepted //149.154.165.120:443
+2026/02/20 19:22:16.335801 from 127.0.0.1:2483 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:16.343871 from 127.0.0.1:2486 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:16.344431 from 127.0.0.1:2481 accepted //149.154.165.120:443
+2026/02/20 19:22:16.351041 from 127.0.0.1:2489 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:16.351041 from 127.0.0.1:2482 accepted //149.154.165.120:443
+2026/02/20 19:22:18.200290 from 127.0.0.1:2492 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:18.317325 from 127.0.0.1:2494 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:18.317831 from 127.0.0.1:2493 accepted //149.154.165.120:443
+2026/02/20 19:22:18.471606 from 127.0.0.1:9144 accepted //gateway.instagram.com:443
+2026/02/20 19:22:20.694745 from 127.0.0.1:9395 accepted //gateway.instagram.com:443
+2026/02/20 19:22:21.545280 [Warning] [1368299026] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:22:21.692927 from 127.0.0.1:3197 accepted //alive.github.com:443
+2026/02/20 19:22:22.219506 from 127.0.0.1:3200 accepted //149.154.165.120:443
+2026/02/20 19:22:22.220011 from 127.0.0.1:3201 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:23.398031 [Warning] [4095301388] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:22:24.345202 [Warning] [1060760710] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:22:25.041391 from 127.0.0.1:3205 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:26.765983 from 127.0.0.1:12159 accepted //alive.github.com:443
+2026/02/20 19:22:27.347289 [Error] [3086357048] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:22:30.564489 [Error] [3648529192] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:22:30.564489 [Warning] [3648529192] proxy/http: failed to read response from 149.154.165.120:80 > unexpected EOF
+2026/02/20 19:22:30.681269 from 127.0.0.1:8902 accepted //graph.instagram.com:443
+2026/02/20 19:22:30.681807 from 127.0.0.1:8427 accepted //media2.giphy.com:443
+2026/02/20 19:22:30.681807 from 127.0.0.1:6538 accepted //media1.giphy.com:443
+2026/02/20 19:22:30.690787 from 127.0.0.1:6542 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:30.690787 from 127.0.0.1:6544 accepted http://ipv6.msftconnecttest.com/connecttest.txt
+2026/02/20 19:22:30.696198 from 127.0.0.1:6547 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:30.700495 from 127.0.0.1:6549 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:30.705857 from 127.0.0.1:6551 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:32.694180 from 127.0.0.1:6555 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:32.778857 from 127.0.0.1:14204 accepted //alive.github.com:443
+2026/02/20 19:22:33.929823 from 127.0.0.1:12935 accepted //web-chat-e2ee.instagram.com:443
+2026/02/20 19:22:36.815419 from 127.0.0.1:12086 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:22:36.892639 [Error] [1402314541] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:22:36.898425 from 127.0.0.1:14387 accepted //alive.github.com:443
+2026/02/20 19:22:37.136755 from 127.0.0.1:13303 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:22:37.136755 from 127.0.0.1:4450 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:22:37.136755 from 127.0.0.1:3961 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:22:37.137759 from 127.0.0.1:7395 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:22:37.137759 from 127.0.0.1:11782 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:22:39.588014 from 127.0.0.1:11789 accepted http://149.154.175.53:80/api
+2026/02/20 19:22:39.590712 from 127.0.0.1:11788 accepted //149.154.175.53:443
+2026/02/20 19:22:40.159180 from 127.0.0.1:13582 accepted //www.instagram.com:443
+2026/02/20 19:22:40.466618 from 127.0.0.1:13114 accepted //www.instagram.com:443
+2026/02/20 19:22:40.466618 from 127.0.0.1:8782 accepted //www.instagram.com:443
+2026/02/20 19:22:40.467624 from 127.0.0.1:3213 accepted //www.instagram.com:443
+2026/02/20 19:22:40.469696 from 127.0.0.1:2125 accepted //www.instagram.com:443
+2026/02/20 19:22:40.470365 from 127.0.0.1:13682 accepted //www.instagram.com:443
+2026/02/20 19:22:40.528811 from 127.0.0.1:12017 accepted //edge-chat.facebook.com:443
+2026/02/20 19:22:40.589694 from 127.0.0.1:12020 accepted http://149.154.175.53:80/api
+2026/02/20 19:22:40.590208 from 127.0.0.1:12019 accepted //149.154.175.53:443
+2026/02/20 19:22:40.633299 [Warning] [1430112053] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:22:40.656614 from 127.0.0.1:12024 accepted http://149.154.165.120:80/api
+2026/02/20 19:22:40.657213 from 127.0.0.1:12023 accepted //149.154.165.120:443
+2026/02/20 19:22:41.178178 from 127.0.0.1:10318 accepted //alive.github.com:443
+2026/02/20 19:22:41.284062 from 127.0.0.1:1704 accepted //edge-chat.instagram.com:443
+2026/02/20 19:22:41.346558 from 127.0.0.1:13242 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:22:41.655992 from 127.0.0.1:12186 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:22:41.655992 from 127.0.0.1:13858 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:22:43.194775 from 127.0.0.1:12196 accepted http://149.154.167.91:80/api
+2026/02/20 19:22:43.195278 from 127.0.0.1:12195 accepted //149.154.167.91:443
+2026/02/20 19:22:43.824321 from 127.0.0.1:14677 accepted //static.cdninstagram.com:443
+2026/02/20 19:22:44.138950 from 127.0.0.1:3043 accepted //static.cdninstagram.com:443
+2026/02/20 19:22:45.901593 [Error] [1588659928] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:22:45.901593 [Warning] [1588659928] proxy/http: failed to read response from 149.154.165.120:80 > unexpected EOF
+2026/02/20 19:22:46.835959 from 127.0.0.1:1149 accepted //www.facebook.com:443
+2026/02/20 19:22:46.880860 from 127.0.0.1:4002 accepted //www.google-analytics.com:443
+2026/02/20 19:22:53.021278 from 127.0.0.1:14817 accepted //edge-chat.instagram.com:443
+2026/02/20 19:22:54.885186 from 127.0.0.1:1365 accepted //www.google-analytics.com:443
+2026/02/20 19:22:59.951358 from 127.0.0.1:1367 accepted //149.154.165.120:443
+2026/02/20 19:22:59.951358 from 127.0.0.1:1368 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:02.290213 from 127.0.0.1:1336 accepted //edge-chat.instagram.com:443
+2026/02/20 19:23:04.857379 from 127.0.0.1:5045 accepted //www.instagram.com:443
+2026/02/20 19:23:05.168963 from 127.0.0.1:7322 accepted //www.instagram.com:443
+2026/02/20 19:23:05.169475 from 127.0.0.1:14948 accepted //www.instagram.com:443
+2026/02/20 19:23:05.169475 from 127.0.0.1:14337 accepted //www.instagram.com:443
+2026/02/20 19:23:05.170044 from 127.0.0.1:10826 accepted //www.instagram.com:443
+2026/02/20 19:23:05.170555 from 127.0.0.1:3980 accepted //www.instagram.com:443
+2026/02/20 19:23:10.293957 from 127.0.0.1:13786 accepted //edge-chat.instagram.com:443
+2026/02/20 19:23:15.212856 from 127.0.0.1:13790 accepted //149.154.175.53:443
+2026/02/20 19:23:15.212856 from 127.0.0.1:13791 accepted http://149.154.175.53:80/api
+2026/02/20 19:23:17.544567 from 127.0.0.1:12440 accepted //gateway.instagram.com:443
+2026/02/20 19:23:20.080810 [Error] [2009897908] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:23:20.284143 from 127.0.0.1:1321 accepted //alive.github.com:443
+2026/02/20 19:23:20.361912 [Error] [2787923111] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:23:26.839072 from 127.0.0.1:5129 accepted //browser.events.data.microsoft.com:443
+2026/02/20 19:23:26.933082 from 127.0.0.1:12618 accepted //www.instagram.com:443
+2026/02/20 19:23:27.241394 from 127.0.0.1:8413 accepted //www.instagram.com:443
+2026/02/20 19:23:27.241394 from 127.0.0.1:6913 accepted //www.instagram.com:443
+2026/02/20 19:23:27.242398 from 127.0.0.1:9401 accepted //www.instagram.com:443
+2026/02/20 19:23:27.244472 from 127.0.0.1:11428 accepted //www.instagram.com:443
+2026/02/20 19:23:27.244472 from 127.0.0.1:8446 accepted //www.instagram.com:443
+2026/02/20 19:23:28.063132 from 127.0.0.1:11435 accepted http://149.154.167.91:80/api
+2026/02/20 19:23:28.063682 from 127.0.0.1:11434 accepted //149.154.167.91:443
+2026/02/20 19:23:29.066695 from 127.0.0.1:11439 accepted http://149.154.167.91:80/api
+2026/02/20 19:23:29.068619 from 127.0.0.1:11438 accepted //149.154.167.91:443
+2026/02/20 19:23:31.067882 from 127.0.0.1:11443 accepted http://149.154.167.91:80/api
+2026/02/20 19:23:31.069149 from 127.0.0.1:11442 accepted //149.154.167.91:443
+2026/02/20 19:23:35.074223 from 127.0.0.1:11447 accepted http://149.154.167.91:80/api
+2026/02/20 19:23:35.074826 from 127.0.0.1:11446 accepted //149.154.167.91:443
+2026/02/20 19:23:36.129304 from 127.0.0.1:11451 accepted http://149.154.167.92:80/api
+2026/02/20 19:23:36.130348 from 127.0.0.1:11450 accepted //149.154.167.92:443
+2026/02/20 19:23:37.143840 from 127.0.0.1:11457 accepted http://149.154.167.92:80/api
+2026/02/20 19:23:37.145946 from 127.0.0.1:11456 accepted //149.154.167.92:443
+2026/02/20 19:23:38.239515 from 127.0.0.1:5915 accepted //www.instagram.com:443
+2026/02/20 19:23:38.239515 from 127.0.0.1:2834 accepted //browser.events.data.microsoft.com:443
+2026/02/20 19:23:38.239515 from 127.0.0.1:8110 accepted //www.instagram.com:443
+2026/02/20 19:23:38.244773 from 127.0.0.1:5099 accepted //www.instagram.com:443
+2026/02/20 19:23:38.265190 from 127.0.0.1:6154 accepted //gateway.instagram.com:443
+2026/02/20 19:23:38.432141 from 127.0.0.1:3329 accepted //www.instagram.com:443
+2026/02/20 19:23:39.425859 [Warning] [1372500970] proxy/http: failed to read response from 149.154.167.91:80 > io: read/write on closed pipe
+2026/02/20 19:23:42.713032 from 127.0.0.1:3340 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:42.713676 from 127.0.0.1:3337 accepted //149.154.165.120:443
+2026/02/20 19:23:42.719083 from 127.0.0.1:3341 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:42.719083 from 127.0.0.1:3338 accepted //149.154.165.120:443
+2026/02/20 19:23:42.725309 from 127.0.0.1:3346 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:42.725830 from 127.0.0.1:3339 accepted //149.154.165.120:443
+2026/02/20 19:23:43.699148 from 127.0.0.1:3352 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:43.699148 from 127.0.0.1:3349 accepted //149.154.165.120:443
+2026/02/20 19:23:43.704541 from 127.0.0.1:3355 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:43.705608 from 127.0.0.1:3350 accepted //149.154.165.120:443
+2026/02/20 19:23:43.710949 from 127.0.0.1:3358 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:43.711473 from 127.0.0.1:3351 accepted //149.154.165.120:443
+2026/02/20 19:23:45.068217 [Error] [3976771712] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:23:45.068217 [Warning] [3976771712] proxy/http: failed to read response from 149.154.167.91:80 > io: read/write on closed pipe
+2026/02/20 19:23:45.072789 [Error] [3589291663] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:23:45.828347 [Error] [1758053590] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:23:45.842578 [Error] [2800721866] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:23:45.842578 [Warning] [2800721866] proxy/http: failed to read response from 149.154.167.91:80 > unexpected EOF
+2026/02/20 19:23:45.847457 [Error] [3962856096] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:23:46.073746 from 127.0.0.1:3361 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:46.276639 from 127.0.0.1:3363 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:47.232562 from 127.0.0.1:3365 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:48.088076 from 127.0.0.1:3370 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:48.092312 from 127.0.0.1:3371 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:48.098857 from 127.0.0.1:3374 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:48.103742 from 127.0.0.1:3376 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:49.028757 from 127.0.0.1:3378 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:49.444759 from 127.0.0.1:3380 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:49.448545 from 127.0.0.1:3382 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:49.453638 from 127.0.0.1:3384 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:49.459805 from 127.0.0.1:3386 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:50.834359 from 127.0.0.1:3388 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:50.838477 from 127.0.0.1:3390 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:50.843092 from 127.0.0.1:3392 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:50.847681 from 127.0.0.1:3394 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:51.725840 from 127.0.0.1:3396 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:51.779281 from 127.0.0.1:3398 accepted http://149.154.165.120:80/api
+2026/02/20 19:23:55.318489 from 127.0.0.1:5653 accepted //media0.giphy.com:443
+2026/02/20 19:23:55.319014 from 127.0.0.1:1993 accepted //graph.instagram.com:443
+2026/02/20 19:23:57.518345 from 127.0.0.1:3536 accepted //graph.instagram.com:443
+2026/02/20 19:23:57.827833 from 127.0.0.1:8963 accepted //graph.instagram.com:443
+2026/02/20 19:24:00.372036 from 127.0.0.1:8966 accepted http://149.154.165.120:80/api
+2026/02/20 19:24:02.332719 from 127.0.0.1:11842 accepted //graph.instagram.com:443
+2026/02/20 19:24:03.172307 from 127.0.0.1:11845 accepted http://149.154.167.91:80/api
+2026/02/20 19:24:03.172983 from 127.0.0.1:11844 accepted //149.154.167.91:443
+2026/02/20 19:24:04.166910 from 127.0.0.1:11849 accepted http://149.154.167.91:80/api
+2026/02/20 19:24:04.168729 from 127.0.0.1:11848 accepted //149.154.167.91:443
+2026/02/20 19:24:05.523157 from 127.0.0.1:11483 accepted //graph.instagram.com:443
+2026/02/20 19:24:05.803790 from 127.0.0.1:8862 accepted //www.instagram.com:443
+2026/02/20 19:24:05.832769 from 127.0.0.1:1775 accepted //graph.instagram.com:443
+2026/02/20 19:24:06.113307 from 127.0.0.1:2291 accepted //www.instagram.com:443
+2026/02/20 19:24:06.113817 from 127.0.0.1:8330 accepted //www.instagram.com:443
+2026/02/20 19:24:06.113817 from 127.0.0.1:10260 accepted //www.instagram.com:443
+2026/02/20 19:24:06.115970 from 127.0.0.1:8097 accepted //www.instagram.com:443
+2026/02/20 19:24:06.115970 from 127.0.0.1:7849 accepted //www.instagram.com:443
+2026/02/20 19:24:06.171927 from 127.0.0.1:8336 accepted //149.154.167.91:443
+2026/02/20 19:24:06.171927 from 127.0.0.1:8337 accepted http://149.154.167.91:80/api
+2026/02/20 19:24:08.011708 [Warning] [2943535958] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:24:08.012719 [Error] [2592846008] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:24:08.012719 [Warning] [2703179645] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:24:08.012719 [Warning] [2592846008] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:24:08.100737 [Error] [1935677457] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:11847->188.114.97.6:443: wsarecv: An existing connection was forcibly closed by the remote host.
+2026/02/20 19:24:08.100737 [Warning] [1935677457] proxy/http: failed to read response from 149.154.167.91:80 > io: read/write on closed pipe
+2026/02/20 19:24:08.103659 [Error] [3264437876] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:11843->188.114.97.6:443: wsarecv: An existing connection was forcibly closed by the remote host.
+2026/02/20 19:24:08.106377 [Error] [2647066687] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:11846->188.114.97.6:443: wsarecv: An existing connection was forcibly closed by the remote host.
+2026/02/20 19:24:08.107992 from 127.0.0.1:9075 accepted //graph.instagram.com:443
+2026/02/20 19:24:08.150154 [Error] [2697572435] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:11851->188.114.97.6:443: wsarecv: An existing connection was forcibly closed by the remote host.
+2026/02/20 19:24:08.151736 [Error] [2050157205] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:11850->188.114.97.6:443: wsarecv: An existing connection was forcibly closed by the remote host.
+2026/02/20 19:24:08.151736 [Warning] [2050157205] proxy/http: failed to read response from 149.154.167.91:80 > io: read/write on closed pipe
+2026/02/20 19:24:09.910067 from 127.0.0.1:9078 accepted http://149.154.165.120:80/api
+2026/02/20 19:24:09.912162 from 127.0.0.1:9077 accepted //149.154.165.120:443
+2026/02/20 19:24:10.518184 [Error] [3530353811] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:24:10.521826 from 127.0.0.1:5410 accepted //media0.giphy.com:443
+2026/02/20 19:24:14.941724 from 127.0.0.1:5413 accepted http://149.154.165.120:80/api
+2026/02/20 19:24:14.941724 from 127.0.0.1:5412 accepted //149.154.165.120:443
+2026/02/20 19:24:15.941193 from 127.0.0.1:5417 accepted http://149.154.165.120:80/api
+2026/02/20 19:24:15.941761 from 127.0.0.1:5416 accepted //149.154.165.120:443
+2026/02/20 19:24:17.282559 from 127.0.0.1:6631 accepted http://ipv6.msftncsi.com/connecttest.txt
+2026/02/20 19:24:17.343894 from 127.0.0.1:6633 accepted http://www.msftncsi.com/connecttest.txt
+2026/02/20 19:24:17.940758 from 127.0.0.1:6637 accepted http://149.154.165.120:80/api
+2026/02/20 19:24:17.942583 from 127.0.0.1:6636 accepted //149.154.165.120:443
+2026/02/20 19:24:20.491772 from 127.0.0.1:6640 accepted http://149.154.165.120:80/api
+2026/02/20 19:24:21.965181 from 127.0.0.1:6642 accepted http://149.154.165.120:80/api
+2026/02/20 19:24:21.970028 from 127.0.0.1:6644 accepted http://149.154.165.120:80/api
+2026/02/20 19:24:21.973714 from 127.0.0.1:6646 accepted http://149.154.165.120:80/api
+2026/02/20 19:24:21.979124 from 127.0.0.1:6648 accepted http://149.154.165.120:80/api
+2026/02/20 19:24:22.942304 [Warning] [3933281693] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:24:23.255601 from 127.0.0.1:6652 accepted http://149.154.165.120:80/api
+2026/02/20 19:24:23.300420 [Error] [4160219591] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:24:23.432517 from 127.0.0.1:6654 accepted http://149.154.165.120:80/api
+2026/02/20 19:24:23.942854 [Warning] [1808619221] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:24:30.091647 from 127.0.0.1:7179 accepted //www.instagram.com:443
+2026/02/20 19:24:30.269531 from 127.0.0.1:1407 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:30.581358 from 127.0.0.1:7483 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:30.581358 from 127.0.0.1:11963 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:30.582040 from 127.0.0.1:6886 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:30.584135 from 127.0.0.1:10185 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:30.584135 from 127.0.0.1:4962 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:32.386313 from 127.0.0.1:1590 accepted //www.instagram.com:443
+2026/02/20 19:24:32.386313 from 127.0.0.1:8103 accepted //www.instagram.com:443
+2026/02/20 19:24:32.387330 from 127.0.0.1:7080 accepted //www.instagram.com:443
+2026/02/20 19:24:32.388885 from 127.0.0.1:4832 accepted //www.instagram.com:443
+2026/02/20 19:24:32.391094 from 127.0.0.1:8143 accepted //www.instagram.com:443
+2026/02/20 19:24:35.553657 from 127.0.0.1:5630 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:36.549306 from 127.0.0.1:5633 accepted http://149.154.167.92:80/api
+2026/02/20 19:24:36.549828 from 127.0.0.1:5632 accepted //149.154.167.92:443
+2026/02/20 19:24:36.655302 [Error] [2255440940] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:6635->188.114.97.6:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2026/02/20 19:24:36.655302 [Warning] [2255440940] proxy/http: failed to read response from www.msftncsi.com > io: read/write on closed pipe
+2026/02/20 19:24:36.875359 [Error] [3543191281] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:5418->188.114.97.6:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2026/02/20 19:24:37.559750 from 127.0.0.1:5637 accepted http://149.154.167.92:80/api
+2026/02/20 19:24:37.560999 from 127.0.0.1:5636 accepted //149.154.167.92:443
+2026/02/20 19:24:38.543911 from 127.0.0.1:4148 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:39.558506 from 127.0.0.1:4156 accepted http://149.154.167.92:80/api
+2026/02/20 19:24:39.560907 from 127.0.0.1:4155 accepted //149.154.167.92:443
+2026/02/20 19:24:39.900965 [Error] [2804251705] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:6639->188.114.97.6:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2026/02/20 19:24:40.022036 from 127.0.0.1:4159 accepted //149.154.167.91:443
+2026/02/20 19:24:40.022562 from 127.0.0.1:4160 accepted http://149.154.167.91:80/api
+2026/02/20 19:24:41.025009 from 127.0.0.1:4169 accepted http://149.154.167.91:80/api
+2026/02/20 19:24:41.025520 from 127.0.0.1:4168 accepted //149.154.167.91:443
+2026/02/20 19:24:41.428063 from 127.0.0.1:7396 accepted //edge-chat.instagram.com:443
+2026/02/20 19:24:43.018516 from 127.0.0.1:7399 accepted http://149.154.167.91:80/api
+2026/02/20 19:24:43.020109 from 127.0.0.1:7398 accepted //149.154.167.91:443
+2026/02/20 19:24:43.557458 from 127.0.0.1:12489 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:44.687502 from 127.0.0.1:12492 accepted http://149.154.175.53:80/api
+2026/02/20 19:24:44.689813 from 127.0.0.1:12491 accepted //149.154.175.53:443
+2026/02/20 19:24:44.781832 [Error] [1090468657] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:6647->188.114.97.6:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2026/02/20 19:24:44.781832 [Warning] [1090468657] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:24:45.697238 from 127.0.0.1:12496 accepted http://149.154.175.53:80/api
+2026/02/20 19:24:45.697773 from 127.0.0.1:12495 accepted //149.154.175.53:443
+2026/02/20 19:24:46.092526 [Error] [2098695796] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:24:46.095443 from 127.0.0.1:7604 accepted //www.instagram.com:443
+2026/02/20 19:24:46.269636 [Error] [2690166881] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:24:46.273050 from 127.0.0.1:10462 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:46.581426 [Error] [2128691186] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:24:46.581426 [Error] [1633493562] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:24:46.583176 [Error] [457617335] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:24:46.584686 [Error] [3954471563] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:24:46.584686 [Error] [910528736] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:24:46.587727 from 127.0.0.1:9934 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:46.588507 from 127.0.0.1:11537 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:46.590610 from 127.0.0.1:8727 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:46.590610 from 127.0.0.1:8592 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:46.591164 from 127.0.0.1:10448 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:24:46.885709 [Warning] [2640183638] proxy/http: failed to read response from 149.154.167.92:80 > io: read/write on closed pipe
+2026/02/20 19:24:47.020913 from 127.0.0.1:10455 accepted http://149.154.167.91:80/api
+2026/02/20 19:24:47.021441 from 127.0.0.1:10454 accepted //149.154.167.91:443
+2026/02/20 19:24:47.481559 [Error] [3480112983] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:6655->188.114.97.6:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2026/02/20 19:24:47.481559 [Warning] [3480112983] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:24:47.903649 from 127.0.0.1:10459 accepted http://149.154.167.151:80/api
+2026/02/20 19:24:47.905431 from 127.0.0.1:10458 accepted //149.154.167.151:443
+2026/02/20 19:24:48.386690 [Error] [832959446] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:24:48.386690 [Error] [2983622459] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:24:48.388457 [Error] [165186675] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:24:48.389353 [Error] [2856575244] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:24:48.391452 [Error] [4198322128] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:24:48.391452 from 127.0.0.1:12578 accepted //www.instagram.com:443
+2026/02/20 19:24:48.391982 from 127.0.0.1:13454 accepted //www.instagram.com:443
+2026/02/20 19:24:48.392491 from 127.0.0.1:12108 accepted //www.instagram.com:443
+2026/02/20 19:24:48.394024 from 127.0.0.1:14899 accepted //www.instagram.com:443
+2026/02/20 19:24:48.396146 from 127.0.0.1:13800 accepted //www.instagram.com:443
+2026/02/20 19:24:48.893574 from 127.0.0.1:13807 accepted http://149.154.167.151:80/api
+2026/02/20 19:24:48.893574 from 127.0.0.1:13806 accepted //149.154.167.151:443
+2026/02/20 19:24:52.042077 from 127.0.0.1:1551 accepted //graph.instagram.com:443
+2026/02/20 19:24:52.096107 from 127.0.0.1:1553 accepted http://149.154.167.151:80/api
+2026/02/20 19:24:52.293467 [Warning] [2763365691] proxy/http: failed to read response from 149.154.167.92:80 > io: read/write on closed pipe
+2026/02/20 19:24:52.993165 from 127.0.0.1:1555 accepted //149.154.175.53:443
+2026/02/20 19:24:52.993165 from 127.0.0.1:1556 accepted http://149.154.175.53:80/api
+2026/02/20 19:24:53.994443 from 127.0.0.1:1559 accepted //149.154.175.53:443
+2026/02/20 19:24:53.994443 from 127.0.0.1:1560 accepted http://149.154.175.53:80/api
+2026/02/20 19:24:54.318250 [Error] [2780918162] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:6653->188.114.97.6:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2026/02/20 19:24:54.318250 [Warning] [2780918162] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:24:56.108696 from 127.0.0.1:1564 accepted http://149.154.167.151:80/api
+2026/02/20 19:24:56.108696 from 127.0.0.1:1563 accepted //149.154.167.151:443
+2026/02/20 19:24:56.474052 [Error] [2815252152] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:24:56.482399 [Error] [2600814227] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:24:57.104813 from 127.0.0.1:1568 accepted http://149.154.167.151:80/api
+2026/02/20 19:24:57.105365 from 127.0.0.1:1567 accepted //149.154.167.151:443
+2026/02/20 19:24:57.821838 from 127.0.0.1:6684 accepted //media3.giphy.com:443
+2026/02/20 19:25:02.846213 [Warning] [688205935] proxy/http: failed to read response from 149.154.167.151:80 > io: read/write on closed pipe
+2026/02/20 19:25:03.098820 [Error] [376884772] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:25:03.546002 from 127.0.0.1:1189 accepted //edge-chat.instagram.com:443
+2026/02/20 19:25:04.306361 from 127.0.0.1:12549 accepted //graph.instagram.com:443
+2026/02/20 19:25:04.556079 from 127.0.0.1:1632 accepted //edge-chat.instagram.com:443
+2026/02/20 19:25:05.159281 from 127.0.0.1:1635 accepted http://149.154.167.91:80/api
+2026/02/20 19:25:05.161454 from 127.0.0.1:1634 accepted //149.154.167.91:443
+2026/02/20 19:25:06.167984 from 127.0.0.1:1639 accepted http://149.154.167.91:80/api
+2026/02/20 19:25:06.168450 from 127.0.0.1:1638 accepted //149.154.167.91:443
+2026/02/20 19:25:07.293817 [Error] [2380680612] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:25:07.297108 from 127.0.0.1:9042 accepted //graph.instagram.com:443
+2026/02/20 19:25:08.162478 from 127.0.0.1:9044 accepted //149.154.167.91:443
+2026/02/20 19:25:08.163063 from 127.0.0.1:9045 accepted http://149.154.167.91:80/api
+2026/02/20 19:25:11.021579 from 127.0.0.1:9048 accepted http://149.154.167.91:80/api
+2026/02/20 19:25:11.026437 from 127.0.0.1:9049 accepted http://149.154.167.91:80/api
+2026/02/20 19:25:11.312196 [Error] [980405309] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:25:11.549108 from 127.0.0.1:9781 accepted //edge-chat.instagram.com:443
+2026/02/20 19:25:12.303705 from 127.0.0.1:9783 accepted http://149.154.167.91:80/api
+2026/02/20 19:25:13.285222 from 127.0.0.1:9785 accepted http://149.154.167.91:80/api
+2026/02/20 19:25:14.545005 from 127.0.0.1:9787 accepted http://149.154.167.91:80/api
+2026/02/20 19:25:19.026695 from 127.0.0.1:9790 accepted http://149.154.167.91:80/api
+2026/02/20 19:25:19.027199 from 127.0.0.1:9789 accepted //149.154.167.91:443
+2026/02/20 19:25:20.020282 from 127.0.0.1:9794 accepted http://149.154.167.91:80/api
+2026/02/20 19:25:20.020282 from 127.0.0.1:9793 accepted //149.154.167.91:443
+2026/02/20 19:25:21.226574 from 127.0.0.1:2071 accepted //media4.giphy.com:443
+2026/02/20 19:25:21.311190 [Error] [2419545393] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:25:22.030931 from 127.0.0.1:2074 accepted http://149.154.167.91:80/api
+2026/02/20 19:25:22.031461 from 127.0.0.1:2073 accepted //149.154.167.91:443
+2026/02/20 19:25:22.517019 [Error] [1406310714] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:25:22.929189 from 127.0.0.1:2078 accepted http://149.154.165.120:80/api
+2026/02/20 19:25:22.931403 from 127.0.0.1:2077 accepted //149.154.165.120:443
+2026/02/20 19:25:24.811240 from 127.0.0.1:11526 accepted //www.instagram.com:443
+2026/02/20 19:25:25.121230 from 127.0.0.1:6824 accepted //www.instagram.com:443
+2026/02/20 19:25:25.121935 from 127.0.0.1:8891 accepted //www.instagram.com:443
+2026/02/20 19:25:25.122467 from 127.0.0.1:2564 accepted //www.instagram.com:443
+2026/02/20 19:25:25.122997 from 127.0.0.1:14221 accepted //www.instagram.com:443
+2026/02/20 19:25:25.125042 from 127.0.0.1:3521 accepted //www.instagram.com:443
+2026/02/20 19:25:27.108941 [Warning] [2527867577] proxy/http: failed to read response from 149.154.167.91:80 > io: read/write on closed pipe
+2026/02/20 19:25:27.308012 from 127.0.0.1:3527 accepted http://ipv6.msftncsi.com/connecttest.txt
+2026/02/20 19:25:27.524830 [Error] [392876052] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:25:27.524830 [Warning] [392876052] proxy/http: failed to read response from 149.154.167.91:80 > unexpected EOF
+2026/02/20 19:25:34.707245 [Warning] [2789807518] proxy/http: failed to read response from 149.154.167.91:80 > io: read/write on closed pipe
+2026/02/20 19:25:36.553237 [Error] [201803776] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:25:36.553237 [Warning] [201803776] proxy/http: failed to read response from 149.154.167.91:80 > unexpected EOF
+2026/02/20 19:25:43.427605 from 127.0.0.1:2248 accepted //graph.instagram.com:443
+2026/02/20 19:25:45.433657 from 127.0.0.1:2250 accepted //v10.events.data.microsoft.com:443
+2026/02/20 19:25:45.505012 from 127.0.0.1:5225 accepted //www.instagram.com:443
+2026/02/20 19:25:45.811000 from 127.0.0.1:11867 accepted //www.instagram.com:443
+2026/02/20 19:25:48.816933 from 127.0.0.1:7438 accepted //www.instagram.com:443
+2026/02/20 19:25:48.816933 from 127.0.0.1:7958 accepted //www.instagram.com:443
+2026/02/20 19:25:48.817872 from 127.0.0.1:3840 accepted //www.instagram.com:443
+2026/02/20 19:25:48.817872 from 127.0.0.1:1948 accepted //www.instagram.com:443
+2026/02/20 19:25:54.182952 from 127.0.0.1:3498 accepted //graph.instagram.com:443
+2026/02/20 19:26:00.024892 [Error] [2550666777] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:14744->188.114.97.3:443: wsarecv: An existing connection was forcibly closed by the remote host.
+2026/02/20 19:26:01.015734 [Error] [2762067542] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:26:02.186231 from 127.0.0.1:13016 accepted //graph.instagram.com:443
+2026/02/20 19:26:20.517734 from 127.0.0.1:13019 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:20.519256 from 127.0.0.1:13018 accepted //149.154.165.120:443
+2026/02/20 19:26:21.270414 from 127.0.0.1:1317 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:26:21.527816 from 127.0.0.1:1319 accepted //149.154.165.120:443
+2026/02/20 19:26:21.527816 from 127.0.0.1:1320 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:21.582999 from 127.0.0.1:7397 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:26:21.583858 from 127.0.0.1:14279 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:26:21.583858 from 127.0.0.1:9249 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:26:21.584395 from 127.0.0.1:13352 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:26:21.586342 from 127.0.0.1:3940 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:26:22.144609 from 127.0.0.1:3947 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:22.146571 from 127.0.0.1:3946 accepted //149.154.165.120:443
+2026/02/20 19:26:23.392947 from 127.0.0.1:7312 accepted //graph.instagram.com:443
+2026/02/20 19:26:23.517613 from 127.0.0.1:7315 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:23.519425 from 127.0.0.1:7314 accepted //149.154.165.120:443
+2026/02/20 19:26:29.435977 from 127.0.0.1:7318 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:29.444479 from 127.0.0.1:13396 accepted //graph.instagram.com:443
+2026/02/20 19:26:30.730840 from 127.0.0.1:13399 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:30.733867 from 127.0.0.1:13401 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:30.739700 from 127.0.0.1:13403 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:30.743718 from 127.0.0.1:13405 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:30.905395 [Warning] [3223431635] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:26:31.395632 from 127.0.0.1:2059 accepted //graph.instagram.com:443
+2026/02/20 19:26:37.077063 from 127.0.0.1:4807 accepted //www.instagram.com:443
+2026/02/20 19:26:37.388229 from 127.0.0.1:11307 accepted //www.instagram.com:443
+2026/02/20 19:26:37.389235 from 127.0.0.1:1591 accepted //www.instagram.com:443
+2026/02/20 19:26:37.389235 from 127.0.0.1:8836 accepted //www.instagram.com:443
+2026/02/20 19:26:37.391290 from 127.0.0.1:4639 accepted //www.instagram.com:443
+2026/02/20 19:26:37.391290 from 127.0.0.1:7084 accepted //www.instagram.com:443
+2026/02/20 19:26:38.740018 [Warning] [178383818] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:26:38.763851 from 127.0.0.1:8843 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:38.763851 from 127.0.0.1:8842 accepted //149.154.165.120:443
+2026/02/20 19:26:39.755998 from 127.0.0.1:8846 accepted //149.154.165.120:443
+2026/02/20 19:26:39.757544 from 127.0.0.1:8847 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:40.830680 [Error] [2032323993] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:1323->188.114.97.6:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2026/02/20 19:26:40.830680 [Warning] [2032323993] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:26:41.753686 from 127.0.0.1:8852 accepted http://149.154.167.92:80/api
+2026/02/20 19:26:41.753686 from 127.0.0.1:8850 accepted //149.154.167.92:443
+2026/02/20 19:26:41.759769 from 127.0.0.1:8855 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:41.760463 from 127.0.0.1:8851 accepted //149.154.165.120:443
+2026/02/20 19:26:42.759734 from 127.0.0.1:8859 accepted http://149.154.167.92:80/api
+2026/02/20 19:26:42.760423 from 127.0.0.1:8858 accepted //149.154.167.92:443
+2026/02/20 19:26:44.755580 from 127.0.0.1:8863 accepted http://149.154.167.92:80/api
+2026/02/20 19:26:44.756118 from 127.0.0.1:8862 accepted //149.154.167.92:443
+2026/02/20 19:26:45.759072 from 127.0.0.1:8873 accepted http://149.154.165.120:80/api
+2026/02/20 19:26:45.759611 from 127.0.0.1:8872 accepted //149.154.165.120:443
+2026/02/20 19:26:48.762531 from 127.0.0.1:8884 accepted http://149.154.167.92:80/api
+2026/02/20 19:26:48.763580 from 127.0.0.1:8883 accepted //149.154.167.92:443
+2026/02/20 19:26:49.022860 from 127.0.0.1:8887 accepted //149.154.175.53:443
+2026/02/20 19:26:49.022860 from 127.0.0.1:8888 accepted http://149.154.175.53:80/api
+2026/02/20 19:26:50.025256 from 127.0.0.1:8896 accepted http://149.154.175.53:80/api
+2026/02/20 19:26:50.025256 from 127.0.0.1:8895 accepted //149.154.175.53:443
+2026/02/20 19:26:52.018456 from 127.0.0.1:8902 accepted http://149.154.175.53:80/api
+2026/02/20 19:26:52.018981 from 127.0.0.1:8901 accepted //149.154.175.53:443
+2026/02/20 19:26:53.077607 [Error] [3684991326] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:53.081985 from 127.0.0.1:2889 accepted //www.instagram.com:443
+2026/02/20 19:26:53.388617 [Error] [104070615] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:53.389657 [Error] [770369313] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:53.389657 [Error] [2732543214] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:53.391706 [Error] [969191349] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:53.391706 [Error] [1255309369] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:53.392770 from 127.0.0.1:9723 accepted //www.instagram.com:443
+2026/02/20 19:26:53.394509 from 127.0.0.1:3732 accepted //www.instagram.com:443
+2026/02/20 19:26:53.395189 from 127.0.0.1:14148 accepted //www.instagram.com:443
+2026/02/20 19:26:53.396840 from 127.0.0.1:14438 accepted //www.instagram.com:443
+2026/02/20 19:26:53.396840 from 127.0.0.1:5805 accepted //www.instagram.com:443
+2026/02/20 19:26:54.021998 from 127.0.0.1:14447 accepted http://149.154.167.91:80/api
+2026/02/20 19:26:54.021998 from 127.0.0.1:14446 accepted //149.154.167.91:443
+2026/02/20 19:26:54.764359 [Error] [3573594464] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:54.764359 [Warning] [3573594464] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:26:54.764982 [Error] [1422113928] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:55.020429 from 127.0.0.1:14451 accepted http://149.154.167.91:80/api
+2026/02/20 19:26:55.020988 from 127.0.0.1:14450 accepted //149.154.167.91:443
+2026/02/20 19:26:55.408866 from 127.0.0.1:13794 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:26:55.721267 from 127.0.0.1:4353 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:26:55.721839 from 127.0.0.1:6793 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:26:55.721839 from 127.0.0.1:6974 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:26:55.757989 [Error] [3969603511] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:55.757989 [Error] [2291875151] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:55.757989 [Warning] [2291875151] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:26:56.024025 from 127.0.0.1:6979 accepted http://149.154.175.53:80/api
+2026/02/20 19:26:56.024626 from 127.0.0.1:6978 accepted //149.154.175.53:443
+2026/02/20 19:26:56.752620 from 127.0.0.1:6983 accepted http://149.154.167.92:80/api
+2026/02/20 19:26:56.754731 from 127.0.0.1:6982 accepted //149.154.167.92:443
+2026/02/20 19:26:56.914208 [Warning] [3527933328] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:26:57.030248 from 127.0.0.1:6991 accepted http://149.154.167.91:80/api
+2026/02/20 19:26:57.030780 from 127.0.0.1:6988 accepted //149.154.167.91:443
+2026/02/20 19:26:57.753706 [Error] [1913047238] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:57.753706 [Error] [347432384] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:57.753706 [Warning] [1913047238] proxy/http: failed to read response from 149.154.167.92:80 > io: read/write on closed pipe
+2026/02/20 19:26:57.760199 [Error] [4128818015] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:57.760199 [Warning] [4128818015] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:26:57.760702 [Error] [1270771478] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:58.316916 from 127.0.0.1:6995 accepted http://149.154.175.55:80/api
+2026/02/20 19:26:58.316916 from 127.0.0.1:6994 accepted //149.154.175.55:443
+2026/02/20 19:26:58.722391 from 127.0.0.1:2697 accepted //graph.instagram.com:443
+2026/02/20 19:26:58.760216 [Error] [1140087424] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:58.760216 [Warning] [1140087424] proxy/http: failed to read response from 149.154.167.92:80 > io: read/write on closed pipe
+2026/02/20 19:26:58.760727 [Error] [2531973372] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:26:59.318677 from 127.0.0.1:2699 accepted //149.154.175.55:443
+2026/02/20 19:26:59.319282 from 127.0.0.1:2700 accepted http://149.154.175.55:80/api
+2026/02/20 19:26:59.960443 from 127.0.0.1:2703 accepted http://149.154.167.92:80/api
+2026/02/20 19:26:59.964653 from 127.0.0.1:2705 accepted http://149.154.167.92:80/api
+2026/02/20 19:27:00.757043 [Error] [2199659228] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:27:00.757043 [Error] [1876512410] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:27:00.757043 [Warning] [2199659228] proxy/http: failed to read response from 149.154.167.92:80 > io: read/write on closed pipe
+2026/02/20 19:27:00.826692 [Warning] [2130422549] proxy/http: failed to read response from 149.154.175.53:80 > io: read/write on closed pipe
+2026/02/20 19:27:00.974276 from 127.0.0.1:2707 accepted http://149.154.175.53:80/api
+2026/02/20 19:27:00.979592 from 127.0.0.1:2709 accepted http://149.154.175.53:80/api
+2026/02/20 19:27:01.759639 [Error] [1745258963] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:27:01.759639 [Error] [2999715462] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:27:01.759639 [Warning] [2999715462] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:27:01.997586 from 127.0.0.1:4777 accepted //edge-chat.instagram.com:443
+2026/02/20 19:27:02.156901 from 127.0.0.1:4779 accepted http://149.154.175.53:80/api
+2026/02/20 19:27:02.933954 [Warning] [214548920] proxy/http: failed to read response from 149.154.175.53:80 > io: read/write on closed pipe
+2026/02/20 19:27:04.759374 from 127.0.0.1:4782 accepted http://91.108.56.118:80/api
+2026/02/20 19:27:04.759901 from 127.0.0.1:4781 accepted //91.108.56.118:443
+2026/02/20 19:27:04.762881 [Error] [2651012296] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:27:04.762881 [Warning] [2651012296] proxy/http: failed to read response from 149.154.167.92:80 > io: read/write on closed pipe
+2026/02/20 19:27:04.763959 [Error] [15937709] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:27:05.023950 [Error] [1055858520] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:27:05.023950 [Warning] [1055858520] proxy/http: failed to read response from 149.154.175.53:80 > io: read/write on closed pipe
+2026/02/20 19:27:05.023950 [Error] [4144365043] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 188.114.97.6:443: i/o timeout
+2026/02/20 19:27:05.140443 from 127.0.0.1:4786 accepted http://149.154.175.53:80/api
+2026/02/20 19:27:05.592056 from 127.0.0.1:4789 accepted http://149.154.175.53:80/api
+2026/02/20 19:27:05.755387 from 127.0.0.1:4792 accepted http://91.108.56.118:80/api
+2026/02/20 19:27:05.755387 from 127.0.0.1:4791 accepted //91.108.56.118:443
+2026/02/20 19:27:06.428111 from 127.0.0.1:4795 accepted http://149.154.175.53:80/api
+2026/02/20 19:27:07.755961 from 127.0.0.1:4800 accepted http://91.108.56.118:80/api
+2026/02/20 19:27:07.755961 from 127.0.0.1:4799 accepted //91.108.56.118:443
+2026/02/20 19:27:07.934607 from 127.0.0.1:5278 accepted //edge-chat.instagram.com:443
+2026/02/20 19:27:07.956306 from 127.0.0.1:5281 accepted http://149.154.167.92:80/api
+2026/02/20 19:27:07.958101 from 127.0.0.1:5280 accepted //149.154.167.92:443
+2026/02/20 19:27:08.977514 from 127.0.0.1:5286 accepted http://149.154.175.53:80/api
+2026/02/20 19:27:08.978057 from 127.0.0.1:5285 accepted //149.154.175.53:443
+2026/02/20 19:27:09.982524 from 127.0.0.1:5290 accepted http://149.154.175.53:80/api
+2026/02/20 19:27:09.983136 from 127.0.0.1:5289 accepted //149.154.175.53:443
+2026/02/20 19:27:12.343058 [Error] [77544314] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:27:14.428777 [Warning] [1736017550] proxy/http: failed to read response from 149.154.175.53:80 > io: read/write on closed pipe
+2026/02/20 19:27:15.165650 [Error] [1019700617] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:27:15.166161 [Warning] [1019700617] proxy/http: failed to read response from 149.154.167.92:80 > unexpected EOF
+2026/02/20 19:27:19.953687 [Error] [4133210847] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:27:19.953687 [Warning] [4133210847] proxy/http: failed to read response from 91.108.56.118:80 > unexpected EOF
+2026/02/20 19:27:19.967636 [Error] [552051452] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:27:20.792480 [Error] [556547761] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:27:20.792480 [Warning] [556547761] proxy/http: failed to read response from 149.154.175.53:80 > unexpected EOF
+2026/02/20 19:27:22.429560 [Warning] [2796179106] proxy/http: failed to read response from 149.154.175.53:80 > io: read/write on closed pipe
+2026/02/20 19:27:22.949027 [Error] [1093502559] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:27:22.949027 [Warning] [1093502559] proxy/http: failed to read response from 91.108.56.118:80 > unexpected EOF
+2026/02/20 19:27:33.261145 from 127.0.0.1:5298 accepted http://149.154.165.136:80/api
+2026/02/20 19:27:33.261145 from 127.0.0.1:5297 accepted //149.154.165.136:443
+2026/02/20 19:27:34.265823 from 127.0.0.1:5302 accepted http://149.154.165.136:80/api
+2026/02/20 19:27:34.267376 from 127.0.0.1:5301 accepted //149.154.165.136:443
+2026/02/20 19:27:39.453623 from 127.0.0.1:8448 accepted //graph.instagram.com:443
+2026/02/20 19:27:42.610164 from 127.0.0.1:8451 accepted //default.exp-tas.com:443
+2026/02/20 19:27:43.120588 from 127.0.0.1:8453 accepted //default.exp-tas.com:443
+2026/02/20 19:27:44.209397 [Warning] [1766305542] proxy/http: failed to read response from 149.154.165.136:80 > io: read/write on closed pipe
+2026/02/20 19:27:55.399067 from 127.0.0.1:1790 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:27:55.711479 from 127.0.0.1:1856 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:27:55.712086 from 127.0.0.1:5193 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:28:22.819779 from 127.0.0.1:5203 accepted http://149.154.165.120:80/api
+2026/02/20 19:28:22.820305 from 127.0.0.1:5202 accepted //149.154.165.120:443
+2026/02/20 19:28:23.823477 from 127.0.0.1:5209 accepted http://149.154.165.120:80/api
+2026/02/20 19:28:23.825094 from 127.0.0.1:5208 accepted //149.154.165.120:443
+2026/02/20 19:28:25.814233 from 127.0.0.1:5214 accepted http://149.154.165.120:80/api
+2026/02/20 19:28:25.815940 from 127.0.0.1:5213 accepted //149.154.165.120:443
+2026/02/20 19:28:39.029055 [Error] [2340063548] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:28:55.874409 from 127.0.0.1:5225 accepted //self.events.data.microsoft.com:443
+2026/02/20 19:29:00.500167 from 127.0.0.1:5228 accepted http://149.154.165.120:80/api
+2026/02/20 19:29:00.500671 from 127.0.0.1:5227 accepted //149.154.165.120:443
+2026/02/20 19:29:01.510302 from 127.0.0.1:5232 accepted http://149.154.165.120:80/api
+2026/02/20 19:29:01.510302 from 127.0.0.1:5231 accepted //149.154.165.120:443
+2026/02/20 19:29:03.516176 from 127.0.0.1:5236 accepted http://149.154.165.120:80/api
+2026/02/20 19:29:03.516176 from 127.0.0.1:5235 accepted //149.154.165.120:443
+2026/02/20 19:29:05.516023 from 127.0.0.1:5240 accepted http://149.154.167.91:80/api
+2026/02/20 19:29:05.519806 from 127.0.0.1:5239 accepted //149.154.167.91:443
+2026/02/20 19:29:06.505922 from 127.0.0.1:5243 accepted //149.154.167.91:443
+2026/02/20 19:29:06.505922 from 127.0.0.1:5244 accepted http://149.154.167.91:80/api
+2026/02/20 19:29:07.533755 from 127.0.0.1:5247 accepted //149.154.165.120:443
+2026/02/20 19:29:07.533755 from 127.0.0.1:5248 accepted http://149.154.165.120:80/api
+2026/02/20 19:29:08.515927 from 127.0.0.1:5252 accepted http://149.154.167.91:80/api
+2026/02/20 19:29:08.516621 from 127.0.0.1:5251 accepted //149.154.167.91:443
+2026/02/20 19:29:12.525716 from 127.0.0.1:5260 accepted http://149.154.167.91:80/api
+2026/02/20 19:29:12.525716 from 127.0.0.1:5259 accepted //149.154.167.91:443
+2026/02/20 19:29:15.539483 from 127.0.0.1:5267 accepted //149.154.165.120:443
+2026/02/20 19:29:15.539483 from 127.0.0.1:5269 accepted http://149.154.165.120:80/api
+2026/02/20 19:29:17.346324 from 127.0.0.1:7250 accepted //go-updater.brave.com:443
+2026/02/20 19:29:19.517033 [Error] [3886316626] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 104.21.78.119:443: i/o timeout
+2026/02/20 19:29:19.517033 [Warning] [3886316626] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:29:19.517033 [Error] [165329692] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > dial tcp 104.21.78.119:443: i/o timeout
+2026/02/20 19:29:20.531918 from 127.0.0.1:7255 accepted http://149.154.167.91:80/api
+2026/02/20 19:29:20.531918 from 127.0.0.1:7252 accepted //149.154.167.91:443
+2026/02/20 19:29:20.925631 from 127.0.0.1:2687 accepted //edge-chat.instagram.com:443
+2026/02/20 19:29:20.934592 [Error] [71956097] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:5230->104.21.78.119:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2026/02/20 19:29:20.934592 [Error] [2518848725] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:5229->104.21.78.119:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2026/02/20 19:29:20.934592 [Warning] [71956097] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:29:21.927257 from 127.0.0.1:5821 accepted //edge-chat.instagram.com:443
+2026/02/20 19:29:22.641792 [Warning] [1666337786] proxy/http: failed to read response from 149.154.167.91:80 > io: read/write on closed pipe
+2026/02/20 19:29:23.540786 [Warning] [340174790] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:29:23.554500 from 127.0.0.1:5826 accepted http://91.108.56.168:80/api
+2026/02/20 19:29:23.555004 from 127.0.0.1:5824 accepted //91.108.56.168:443
+2026/02/20 19:29:23.559697 from 127.0.0.1:5829 accepted http://149.154.165.120:80/api
+2026/02/20 19:29:23.559697 from 127.0.0.1:5825 accepted //149.154.165.120:443
+2026/02/20 19:29:23.990609 [Warning] [37008714] proxy/http: failed to read response from 149.154.167.91:80 > io: read/write on closed pipe
+2026/02/20 19:29:24.076363 from 127.0.0.1:5834 accepted http://149.154.175.53:80/api
+2026/02/20 19:29:24.076876 from 127.0.0.1:5833 accepted //149.154.175.53:443
+2026/02/20 19:29:24.151343 [Error] [1541324842] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:5233->104.21.78.119:443: wsarecv: An existing connection was forcibly closed by the remote host.
+2026/02/20 19:29:24.552685 from 127.0.0.1:5838 accepted //91.108.56.168:443
+2026/02/20 19:29:24.552685 from 127.0.0.1:5839 accepted http://91.108.56.168:80/api
+2026/02/20 19:29:25.663422 [Warning] [747105484] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:29:29.932009 from 127.0.0.1:1323 accepted //edge-chat.instagram.com:443
+2026/02/20 19:29:30.090796 from 127.0.0.1:1955 accepted //accounts.google.com:443
+2026/02/20 19:29:30.099115 from 127.0.0.1:6801 accepted //edge-chat.instagram.com:443
+2026/02/20 19:29:30.262481 [Warning] [3752031225] proxy/http: failed to read response from 149.154.167.91:80 > io: read/write on closed pipe
+2026/02/20 19:29:31.062366 [Warning] [3940963081] proxy/http: failed to read response from 149.154.167.91:80 > io: read/write on closed pipe
+2026/02/20 19:29:33.116385 from 127.0.0.1:10510 accepted //edge-chat.instagram.com:443
+2026/02/20 19:29:38.926562 from 127.0.0.1:7287 accepted //edge-chat.instagram.com:443
+2026/02/20 19:29:41.951064 from 127.0.0.1:12696 accepted //edge-chat.instagram.com:443
+2026/02/20 19:29:44.934840 from 127.0.0.1:1924 accepted //edge-chat.instagram.com:443
+2026/02/20 19:29:45.348163 [Error] [4018353017] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:29:45.351201 from 127.0.0.1:8417 accepted //accounts.google.com:443
+2026/02/20 19:29:45.532386 from 127.0.0.1:8420 accepted http://149.154.175.53:80/api
+2026/02/20 19:29:45.535432 from 127.0.0.1:8419 accepted //149.154.175.53:443
+2026/02/20 19:29:45.932730 from 127.0.0.1:7242 accepted //edge-chat.instagram.com:443
+2026/02/20 19:29:46.410357 [Error] [2256736563] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:5234->104.21.78.119:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2026/02/20 19:29:46.410357 [Warning] [2256736563] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:29:46.533882 from 127.0.0.1:7245 accepted http://149.154.175.53:80/api
+2026/02/20 19:29:46.536702 from 127.0.0.1:7244 accepted //149.154.175.53:443
+2026/02/20 19:29:48.015529 from 127.0.0.1:7249 accepted http://149.154.175.53:80/api
+2026/02/20 19:29:48.016041 from 127.0.0.1:7248 accepted //149.154.175.53:443
+2026/02/20 19:29:49.485901 from 127.0.0.1:5126 accepted //graph.instagram.com:443
+2026/02/20 19:29:53.935991 from 127.0.0.1:7110 accepted //edge-chat.instagram.com:443
+2026/02/20 19:29:56.276271 [Warning] [3886693859] proxy/http: failed to read response from 149.154.175.53:80 > io: read/write on closed pipe
+2026/02/20 19:30:00.417041 from 127.0.0.1:7113 accepted http://c.pki.goog/r/gsr1.crl
+2026/02/20 19:30:01.747156 [Error] [2455819659] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:30:04.923548 from 127.0.0.1:3129 accepted //edge-chat.instagram.com:443
+2026/02/20 19:30:06.483994 from 127.0.0.1:6333 accepted //edge-chat.instagram.com:443
+2026/02/20 19:30:08.418021 [Warning] [775492110] proxy/http: failed to read response from c.pki.goog > io: read/write on closed pipe
+2026/02/20 19:30:08.426872 from 127.0.0.1:6335 accepted http://c.pki.goog/r/r4.crl
+2026/02/20 19:30:08.812150 from 127.0.0.1:6335 accepted http://x1.c.lencr.org/
+2026/02/20 19:30:09.182458 from 127.0.0.1:6335 accepted http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl
+2026/02/20 19:30:12.449404 from 127.0.0.1:6340 accepted http://149.154.175.53:80/api
+2026/02/20 19:30:12.450050 from 127.0.0.1:6339 accepted //149.154.175.53:443
+2026/02/20 19:30:12.928810 from 127.0.0.1:4760 accepted //edge-chat.instagram.com:443
+2026/02/20 19:30:12.930945 from 127.0.0.1:4762 accepted http://149.154.167.91:80/api
+2026/02/20 19:30:12.931470 from 127.0.0.1:6343 accepted //149.154.167.91:443
+2026/02/20 19:30:13.448938 from 127.0.0.1:4766 accepted http://149.154.175.53:80/api
+2026/02/20 19:30:13.449471 from 127.0.0.1:4765 accepted //149.154.175.53:443
+2026/02/20 19:30:13.931282 from 127.0.0.1:4770 accepted http://149.154.167.91:80/api
+2026/02/20 19:30:13.931282 from 127.0.0.1:4769 accepted //149.154.167.91:443
+2026/02/20 19:30:15.454091 from 127.0.0.1:4774 accepted http://149.154.175.53:80/api
+2026/02/20 19:30:15.454091 from 127.0.0.1:4773 accepted //149.154.175.53:443
+2026/02/20 19:30:15.933122 from 127.0.0.1:4780 accepted http://149.154.167.91:80/api
+2026/02/20 19:30:15.933629 from 127.0.0.1:4779 accepted //149.154.167.91:443
+2026/02/20 19:30:18.824411 from 127.0.0.1:13564 accepted //graph.instagram.com:443
+2026/02/20 19:30:19.006779 from 127.0.0.1:13567 accepted http://149.154.167.92:80/api
+2026/02/20 19:30:19.006779 from 127.0.0.1:13566 accepted //149.154.167.92:443
+2026/02/20 19:30:19.459479 from 127.0.0.1:13570 accepted //149.154.175.53:443
+2026/02/20 19:30:19.459479 from 127.0.0.1:13571 accepted http://149.154.175.53:80/api
+2026/02/20 19:30:20.957730 from 127.0.0.1:13575 accepted http://149.154.167.91:80/api
+2026/02/20 19:30:20.959244 from 127.0.0.1:13574 accepted //149.154.167.91:443
+2026/02/20 19:30:21.956500 from 127.0.0.1:13579 accepted http://149.154.167.91:80/api
+2026/02/20 19:30:21.958429 from 127.0.0.1:13578 accepted //149.154.167.91:443
+2026/02/20 19:30:26.923730 from 127.0.0.1:6718 accepted //edge-chat.instagram.com:443
+2026/02/20 19:30:30.897395 [Error] [654750798] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:30:30.897395 [Warning] [654750798] proxy/http: failed to read response from 149.154.175.53:80 > unexpected EOF
+2026/02/20 19:30:39.781120 from 127.0.0.1:6727 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:39.781657 from 127.0.0.1:6720 accepted //149.154.165.120:443
+2026/02/20 19:30:39.787174 from 127.0.0.1:6728 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:39.787691 from 127.0.0.1:6721 accepted //149.154.165.120:443
+2026/02/20 19:30:39.792905 from 127.0.0.1:6729 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:39.792905 from 127.0.0.1:6722 accepted //149.154.165.120:443
+2026/02/20 19:30:39.799593 from 127.0.0.1:6736 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:39.800109 from 127.0.0.1:6723 accepted //149.154.165.120:443
+2026/02/20 19:30:39.804087 from 127.0.0.1:6739 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:39.804087 from 127.0.0.1:6724 accepted //149.154.165.120:443
+2026/02/20 19:30:39.810249 from 127.0.0.1:6742 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:39.810249 from 127.0.0.1:6725 accepted //149.154.165.120:443
+2026/02/20 19:30:39.814514 from 127.0.0.1:6745 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:39.815104 from 127.0.0.1:6726 accepted //149.154.165.120:443
+2026/02/20 19:30:40.742472 from 127.0.0.1:6748 accepted //149.154.165.120:443
+2026/02/20 19:30:40.742472 from 127.0.0.1:6749 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:43.582423 from 127.0.0.1:6752 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:44.870536 from 127.0.0.1:6754 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:44.878421 from 127.0.0.1:6755 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:44.884516 from 127.0.0.1:6756 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:44.892573 from 127.0.0.1:6760 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:48.506196 from 127.0.0.1:6765 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:50.800042 from 127.0.0.1:6767 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:52.871753 [Warning] [1443805524] proxy/http: failed to read response from 149.154.165.120:80 > io: read/write on closed pipe
+2026/02/20 19:30:52.896785 from 127.0.0.1:6769 accepted //149.154.165.120:443
+2026/02/20 19:30:52.897582 from 127.0.0.1:6770 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:53.889327 from 127.0.0.1:6774 accepted http://149.154.165.120:80/api
+2026/02/20 19:30:53.893990 from 127.0.0.1:6773 accepted //149.154.165.120:443
+2026/02/20 19:31:00.474250 [Error] [3575682487] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:31:00.474250 [Warning] [3575682487] proxy/http: failed to read response from 149.154.165.120:80 > unexpected EOF
+2026/02/20 19:31:00.474250 [Error] [1416258503] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:31:00.474250 [Warning] [1416258503] proxy/http: failed to read response from 149.154.165.120:80 > unexpected EOF
+2026/02/20 19:31:06.243844 from 127.0.0.1:6778 accepted http://149.154.167.91:80/api
+2026/02/20 19:31:06.244407 from 127.0.0.1:6777 accepted //149.154.167.91:443
+2026/02/20 19:31:07.238756 from 127.0.0.1:6782 accepted http://149.154.167.91:80/api
+2026/02/20 19:31:07.239315 from 127.0.0.1:6781 accepted //149.154.167.91:443
+2026/02/20 19:31:07.930864 from 127.0.0.1:2234 accepted //edge-chat.instagram.com:443
+2026/02/20 19:31:08.101057 [Error] [3276520565] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:31:08.602031 from 127.0.0.1:6335 accepted http://c.pki.goog/r/gsr1.crl
+2026/02/20 19:31:08.935861 from 127.0.0.1:2238 accepted http://149.154.175.53:80/api
+2026/02/20 19:31:08.937258 from 127.0.0.1:2237 accepted //149.154.175.53:443
+2026/02/20 19:31:09.079871 [Error] [2544771219] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:31:09.079871 [Warning] [2544771219] proxy/http: failed to read response from 149.154.165.120:80 > unexpected EOF
+2026/02/20 19:31:09.938550 from 127.0.0.1:2242 accepted http://149.154.175.53:80/api
+2026/02/20 19:31:09.939208 from 127.0.0.1:2241 accepted //149.154.175.53:443
+2026/02/20 19:31:17.350133 from 127.0.0.1:4580 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:31:22.006399 from 127.0.0.1:9450 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:31:28.936589 from 127.0.0.1:9453 accepted http://149.154.167.91:80/api
+2026/02/20 19:31:28.940393 from 127.0.0.1:9452 accepted //149.154.167.91:443
+2026/02/20 19:31:29.930404 from 127.0.0.1:9456 accepted //149.154.167.91:443
+2026/02/20 19:31:29.930404 from 127.0.0.1:9457 accepted http://149.154.167.91:80/api
+2026/02/20 19:31:31.935042 from 127.0.0.1:9462 accepted http://149.154.167.91:80/api
+2026/02/20 19:31:31.935558 from 127.0.0.1:9461 accepted //149.154.167.91:443
+2026/02/20 19:31:34.390703 from 127.0.0.1:9466 accepted http://149.154.175.53:80/api
+2026/02/20 19:31:34.391400 from 127.0.0.1:9465 accepted //149.154.175.53:443
+2026/02/20 19:31:35.388319 from 127.0.0.1:9470 accepted http://149.154.175.53:80/api
+2026/02/20 19:31:35.390195 from 127.0.0.1:9469 accepted //149.154.175.53:443
+2026/02/20 19:31:35.480686 [Error] [4114447868] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > read tcp 192.168.1.100:2239->104.21.78.119:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2026/02/20 19:31:35.480686 [Warning] [4114447868] proxy/http: failed to read response from 149.154.175.53:80 > io: read/write on closed pipe
+2026/02/20 19:31:35.928229 from 127.0.0.1:9473 accepted //149.154.167.91:443
+2026/02/20 19:31:35.928229 from 127.0.0.1:9474 accepted http://149.154.167.91:80/api
+2026/02/20 19:31:37.198603 [Warning] [702739733] proxy/http: failed to read response from 149.154.167.91:80 > io: read/write on closed pipe
+2026/02/20 19:31:37.930654 [Warning] [2019253682] proxy/http: failed to read response from 149.154.167.91:80 > io: read/write on closed pipe
+2026/02/20 19:31:38.229743 from 127.0.0.1:5006 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:31:40.799373 from 127.0.0.1:5009 accepted http://149.154.165.120:80/api
+2026/02/20 19:31:40.799373 from 127.0.0.1:5008 accepted //149.154.165.120:443
+2026/02/20 19:31:41.197208 from 127.0.0.1:9376 accepted //www.instagram.com:443
+2026/02/20 19:31:41.508655 from 127.0.0.1:4917 accepted //www.instagram.com:443
+2026/02/20 19:31:41.509173 from 127.0.0.1:11599 accepted //www.instagram.com:443
+2026/02/20 19:31:41.509717 from 127.0.0.1:8028 accepted //www.instagram.com:443
+2026/02/20 19:31:41.512282 from 127.0.0.1:12985 accepted //www.instagram.com:443
+2026/02/20 19:31:41.512282 from 127.0.0.1:8716 accepted //www.instagram.com:443
+2026/02/20 19:31:44.870133 from 127.0.0.1:5575 accepted //alive.github.com:443
+2026/02/20 19:31:46.706105 from 127.0.0.1:1347 accepted //graph.instagram.com:443
+2026/02/20 19:31:47.019065 from 127.0.0.1:5194 accepted //graph.instagram.com:443
+2026/02/20 19:31:47.703735 from 127.0.0.1:1938 accepted //scontent-bru2-1.cdninstagram.com:443
+2026/02/20 19:31:47.703735 from 127.0.0.1:10669 accepted //scontent-bru2-1.cdninstagram.com:443
+2026/02/20 19:31:47.704327 from 127.0.0.1:3570 accepted //scontent-bru2-1.cdninstagram.com:443
+2026/02/20 19:31:47.882626 from 127.0.0.1:5163 accepted //edge-chat.instagram.com:443
+2026/02/20 19:31:56.720613 [Error] [4008963290] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:32:03.157281 [Error] [600966657] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:32:03.160178 from 127.0.0.1:6885 accepted //edge-chat.instagram.com:443
+2026/02/20 19:32:05.906490 from 127.0.0.1:12799 accepted //www.instagram.com:443
+2026/02/20 19:32:06.221232 from 127.0.0.1:2455 accepted //www.instagram.com:443
+2026/02/20 19:32:06.221232 from 127.0.0.1:5216 accepted //www.instagram.com:443
+2026/02/20 19:32:10.101263 from 127.0.0.1:7689 accepted //edge-chat.instagram.com:443
+2026/02/20 19:32:23.738183 from 127.0.0.1:7698 accepted http://149.154.175.53:80/api
+2026/02/20 19:32:23.738688 from 127.0.0.1:7697 accepted //149.154.175.53:443
+2026/02/20 19:32:24.747761 from 127.0.0.1:7702 accepted http://149.154.175.53:80/api
+2026/02/20 19:32:24.747761 from 127.0.0.1:7701 accepted //149.154.175.53:443
+2026/02/20 19:32:27.935746 from 127.0.0.1:5822 accepted //edge-chat.instagram.com:443
+2026/02/20 19:32:42.157359 from 127.0.0.1:4367 accepted //static.cdninstagram.com:443
+2026/02/20 19:32:45.173090 from 127.0.0.1:6164 accepted //graph.instagram.com:443
+2026/02/20 19:32:50.930655 from 127.0.0.1:11806 accepted //edge-chat.instagram.com:443
+2026/02/20 19:32:55.486136 from 127.0.0.1:3865 accepted //graph.instagram.com:443
+2026/02/20 19:32:57.523635 [Error] [1904737469] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:32:57.526529 from 127.0.0.1:11326 accepted //static.cdninstagram.com:443
+2026/02/20 19:32:58.933867 from 127.0.0.1:7066 accepted //edge-chat.instagram.com:443
+2026/02/20 19:33:02.565290 [Error] [2573533525] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:33:06.951627 from 127.0.0.1:10024 accepted //edge-chat.facebook.com:443
+2026/02/20 19:33:07.423469 from 127.0.0.1:4212 accepted //static.cdninstagram.com:443
+2026/02/20 19:33:17.920436 from 127.0.0.1:4215 accepted http://149.154.175.53:80/api
+2026/02/20 19:33:17.920960 from 127.0.0.1:4214 accepted //149.154.175.53:443
+2026/02/20 19:33:19.574832 from 127.0.0.1:4219 accepted http://149.154.165.136:80/api
+2026/02/20 19:33:19.574832 from 127.0.0.1:4218 accepted //149.154.165.136:443
+2026/02/20 19:33:20.568622 from 127.0.0.1:4222 accepted //149.154.165.136:443
+2026/02/20 19:33:20.569199 from 127.0.0.1:4223 accepted http://149.154.165.136:80/api
+2026/02/20 19:33:22.566497 from 127.0.0.1:4227 accepted http://149.154.165.136:80/api
+2026/02/20 19:33:22.567102 from 127.0.0.1:4226 accepted //149.154.165.136:443
+2026/02/20 19:33:27.494851 from 127.0.0.1:4232 accepted //array516.prod.do.dsp.mp.microsoft.com:443
+2026/02/20 19:33:27.504883 from 127.0.0.1:4234 accepted //array509.prod.do.dsp.mp.microsoft.com:443
+2026/02/20 19:33:27.514930 from 127.0.0.1:4237 accepted //array516.prod.do.dsp.mp.microsoft.com:443
+2026/02/20 19:33:27.525824 from 127.0.0.1:4239 accepted //array507.prod.do.dsp.mp.microsoft.com:443
+2026/02/20 19:33:29.832888 from 127.0.0.1:4244 accepted //kv501.prod.do.dsp.mp.microsoft.com:443
+2026/02/20 19:33:30.791870 from 127.0.0.1:4247 accepted //149.154.175.53:443
+2026/02/20 19:33:30.791870 from 127.0.0.1:4248 accepted http://149.154.175.53:80/api
+2026/02/20 19:33:31.128962 from 127.0.0.1:4251 accepted //kv501.prod.do.dsp.mp.microsoft.com:443
+2026/02/20 19:33:42.138356 from 127.0.0.1:4253 accepted //kv501.prod.do.dsp.mp.microsoft.com:443
+2026/02/20 19:33:42.764961 [Error] [2544922615] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:33:44.382624 from 127.0.0.1:4255 accepted //kv501.prod.do.dsp.mp.microsoft.com:443
+2026/02/20 19:33:54.399135 from 127.0.0.1:4261 accepted http://149.154.175.53:80/api
+2026/02/20 19:33:54.399135 from 127.0.0.1:4260 accepted //149.154.175.53:443
+2026/02/20 19:34:02.399762 [Warning] [1494911633] proxy/http: failed to read response from 149.154.175.53:80 > io: read/write on closed pipe
+2026/02/20 19:34:12.520775 from 127.0.0.1:4266 accepted //149.154.167.91:443
+2026/02/20 19:34:12.520775 from 127.0.0.1:4267 accepted http://149.154.167.91:80/api
+2026/02/20 19:34:15.433794 from 127.0.0.1:4270 accepted http://149.154.167.91:80/api
+2026/02/20 19:34:15.439519 from 127.0.0.1:4272 accepted http://149.154.167.91:80/api
+2026/02/20 19:34:16.942776 from 127.0.0.1:4274 accepted //149.154.165.120:443
+2026/02/20 19:34:16.942776 from 127.0.0.1:4275 accepted http://149.154.165.120:80/api
+2026/02/20 19:34:17.492481 from 127.0.0.1:3294 accepted //edge-chat.facebook.com:443
+2026/02/20 19:34:17.578728 from 127.0.0.1:3034 accepted //web-chat-e2ee.instagram.com:443
+2026/02/20 19:34:17.927042 from 127.0.0.1:3036 accepted http://149.154.167.91:80/api
+2026/02/20 19:34:17.940721 from 127.0.0.1:3039 accepted http://149.154.165.120:80/api
+2026/02/20 19:34:17.942288 from 127.0.0.1:3038 accepted //149.154.165.120:443
+2026/02/20 19:34:21.926897 from 127.0.0.1:3043 accepted http://149.154.167.91:80/api
+2026/02/20 19:34:21.929202 from 127.0.0.1:3042 accepted //149.154.167.91:443
+2026/02/20 19:34:32.587226 from 127.0.0.1:13091 accepted //web-chat-e2ee.instagram.com:443
+2026/02/20 19:34:32.778436 [Error] [3041851637] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:34:32.781997 from 127.0.0.1:4306 accepted //web-chat-e2ee.instagram.com:443
+2026/02/20 19:34:33.047068 from 127.0.0.1:13857 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:34:33.153069 [Error] [868297794] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:34:33.153069 [Warning] [868297794] proxy/http: failed to read response from 149.154.167.91:80 > unexpected EOF
+2026/02/20 19:34:42.126565 from 127.0.0.1:6270 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:34:42.141694 from 127.0.0.1:9329 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:34:42.141694 from 127.0.0.1:4746 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:34:42.142699 from 127.0.0.1:9298 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:34:43.068333 from 127.0.0.1:4294 accepted //graph.instagram.com:443
+2026/02/20 19:34:44.388083 from 127.0.0.1:11991 accepted //web-chat-e2ee.instagram.com:443
+2026/02/20 19:34:50.659698 from 127.0.0.1:2767 accepted //api.github.com:443
+2026/02/20 19:34:50.659698 from 127.0.0.1:12551 accepted //collector.github.com:443
+2026/02/20 19:34:51.035694 from 127.0.0.1:13738 accepted //dash.cloudflare.com:443
+2026/02/20 19:34:51.340829 from 127.0.0.1:4903 accepted //dash.cloudflare.com:443
+2026/02/20 19:34:51.342462 from 127.0.0.1:6152 accepted //dash.cloudflare.com:443
+2026/02/20 19:34:51.371948 from 127.0.0.1:1329 accepted //dash.cloudflare.com:443
+2026/02/20 19:34:51.372953 from 127.0.0.1:1947 accepted //dash.cloudflare.com:443
+2026/02/20 19:34:51.372953 from 127.0.0.1:5338 accepted //dash.cloudflare.com:443
+2026/02/20 19:34:51.930336 from 127.0.0.1:14869 accepted //r.stripe.com:443
+2026/02/20 19:34:52.492352 from 127.0.0.1:10515 accepted //r.stripe.com:443
+2026/02/20 19:34:53.309164 from 127.0.0.1:8512 accepted //www.instagram.com:443
+2026/02/20 19:34:53.625428 from 127.0.0.1:13900 accepted //www.instagram.com:443
+2026/02/20 19:34:53.625428 from 127.0.0.1:6076 accepted //www.instagram.com:443
+2026/02/20 19:34:53.625932 from 127.0.0.1:3905 accepted //www.instagram.com:443
+2026/02/20 19:34:53.625932 from 127.0.0.1:4998 accepted //www.instagram.com:443
+2026/02/20 19:34:53.627600 from 127.0.0.1:7555 accepted //www.instagram.com:443
+2026/02/20 19:34:54.228437 from 127.0.0.1:3863 accepted //r.stripe.com:443
+2026/02/20 19:34:54.228437 from 127.0.0.1:2797 accepted //r.stripe.com:443
+2026/02/20 19:34:56.846450 from 127.0.0.1:11850 accepted //scontent-zrh1-1.cdninstagram.com:443
+2026/02/20 19:34:58.663968 from 127.0.0.1:1480 accepted //collector.github.com:443
+2026/02/20 19:34:58.663968 from 127.0.0.1:5333 accepted //api.github.com:443
+2026/02/20 19:34:59.376860 from 127.0.0.1:5317 accepted //dash.cloudflare.com:443
+2026/02/20 19:34:59.377882 from 127.0.0.1:6777 accepted //dash.cloudflare.com:443
+2026/02/20 19:34:59.378407 from 127.0.0.1:9413 accepted //dash.cloudflare.com:443
+2026/02/20 19:35:01.441400 from 127.0.0.1:10683 accepted //login.live.com:443
+2026/02/20 19:35:01.451538 from 127.0.0.1:10685 accepted //login.live.com:443
+2026/02/20 19:35:02.232668 from 127.0.0.1:6671 accepted //r.stripe.com:443
+2026/02/20 19:35:02.232668 from 127.0.0.1:1612 accepted //r.stripe.com:443
+2026/02/20 19:35:07.610986 [Error] [1242715990] transport/internet/websocket: failed to dial to cfnew.tehranhost.online:443 > EOF
+2026/02/20 19:35:07.614565 from 127.0.0.1:11912 accepted //r.stripe.com:443
+2026/02/20 19:35:11.692540 from 127.0.0.1:11937 accepted http://149.154.175.53:80/api
+2026/02/20 19:35:11.695647 from 127.0.0.1:11936 accepted //149.154.175.53:443
