@@ -33,6 +33,8 @@ jobs:
       - name: Build APK (Release)
         run: |
           cd android_app
+          flutter config --enable-android
+          flutter create . --platforms android
           flutter build apk --release
 
       - name: Upload APK
