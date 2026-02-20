@@ -5,6 +5,13 @@ class ConfigParser {
     if (!link.startsWith("vless://")) return null;
     
     try {
+      int hashIndex = link.indexOf('#');
+      if (hashIndex != -1) {
+        String base = link.substring(0, hashIndex);
+        String fragment = link.substring(hashIndex + 1);
+        try { fragment = Uri.decodeComponent(fragment); } catch(e) {}
+        link = base + '#' + Uri.encodeComponent(fragment);
+      }
       final uri = Uri.parse(link);
       final uuid = uri.userInfo;
       final address = uri.host;
@@ -13,14 +20,16 @@ class ConfigParser {
 
       final net = uri.queryParameters['type'] ?? 'tcp';
       final security = uri.queryParameters['security'] ?? 'none';
-      final path = Uri.decodeComponent(uri.queryParameters['path'] ?? '/');
-      final host = Uri.decodeComponent(uri.queryParameters['host'] ?? '');
-      final sniParam = Uri.decodeComponent(uri.queryParameters['sni'] ?? '');
+      final path = uri.queryParameters['path'] ?? '/';
+      final host = uri.queryParameters['host'] ?? '';
+      final sniParam = uri.queryParameters['sni'] ?? '';
       final fp = uri.queryParameters['fp'] ?? '';
       final alpnStr = uri.queryParameters['alpn'] ?? '';
-      final serviceName = Uri.decodeComponent(uri.queryParameters['serviceName'] ?? '');
+      final serviceName = uri.queryParameters['serviceName'] ?? '';
       final headerType = uri.queryParameters['headerType'] ?? 'none';
       final mode = uri.queryParameters['mode'] ?? 'auto';
+
+      final bool allowInsecure = (uri.queryParameters['allowInsecure'] == '1' || uri.queryParameters['allowInsecure'] == 'true' || uri.queryParameters['insecure'] == '1' || uri.queryParameters['insecure'] == 'true');
 
       final sni = (host.isNotEmpty && sniParam.isEmpty) ? host : sniParam;
 
@@ -46,7 +55,7 @@ class ConfigParser {
       if (security == "tls") {
         Map<String, dynamic> tlsSettings = {
           "serverName": sni,
-          "allowInsecure": false
+          "allowInsecure": allowInsecure
         };
         if (alpnStr.isNotEmpty) tlsSettings["alpn"] = alpnStr.split(",");
         if (fp.isNotEmpty) tlsSettings["fingerprint"] = fp;
@@ -125,6 +134,13 @@ class ConfigParser {
     if (!link.startsWith("trojan://")) return null;
     
     try {
+      int hashIndex = link.indexOf('#');
+      if (hashIndex != -1) {
+        String base = link.substring(0, hashIndex);
+        String fragment = link.substring(hashIndex + 1);
+        try { fragment = Uri.decodeComponent(fragment); } catch(e) {}
+        link = base + '#' + Uri.encodeComponent(fragment);
+      }
       final uri = Uri.parse(link);
       final password = uri.userInfo;
       final address = uri.host;
@@ -133,14 +149,16 @@ class ConfigParser {
 
       final net = uri.queryParameters['type'] ?? 'tcp';
       final security = uri.queryParameters['security'] ?? 'none';
-      final path = Uri.decodeComponent(uri.queryParameters['path'] ?? '/');
-      final host = Uri.decodeComponent(uri.queryParameters['host'] ?? '');
-      final sniParam = Uri.decodeComponent(uri.queryParameters['sni'] ?? '');
+      final path = uri.queryParameters['path'] ?? '/';
+      final host = uri.queryParameters['host'] ?? '';
+      final sniParam = uri.queryParameters['sni'] ?? '';
       final fp = uri.queryParameters['fp'] ?? '';
       final alpnStr = uri.queryParameters['alpn'] ?? '';
-      final serviceName = Uri.decodeComponent(uri.queryParameters['serviceName'] ?? '');
+      final serviceName = uri.queryParameters['serviceName'] ?? '';
       final headerType = uri.queryParameters['headerType'] ?? 'none';
       final mode = uri.queryParameters['mode'] ?? 'auto';
+
+      final bool allowInsecure = (uri.queryParameters['allowInsecure'] == '1' || uri.queryParameters['allowInsecure'] == 'true' || uri.queryParameters['insecure'] == '1' || uri.queryParameters['insecure'] == 'true');
 
       final sni = (host.isNotEmpty && sniParam.isEmpty) ? host : sniParam;
 
@@ -163,7 +181,7 @@ class ConfigParser {
       if (security == "tls") {
         Map<String, dynamic> tlsSettings = {
           "serverName": sni,
-          "allowInsecure": false
+          "allowInsecure": allowInsecure
         };
         if (alpnStr.isNotEmpty) tlsSettings["alpn"] = alpnStr.split(",");
         if (fp.isNotEmpty) tlsSettings["fingerprint"] = fp;
@@ -243,6 +261,10 @@ class ConfigParser {
     
     try {
       String b64 = link.substring(8);
+      int hashIndex = b64.indexOf('#');
+      if (hashIndex != -1) b64 = b64.substring(0, hashIndex);
+      int qIndex = b64.indexOf('?');
+      if (qIndex != -1) b64 = b64.substring(0, qIndex);
       
       // Clean up base64 string
       b64 = b64.replaceAll(RegExp(r'\s+'), '');

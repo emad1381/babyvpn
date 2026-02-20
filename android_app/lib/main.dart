@@ -134,26 +134,51 @@ class _MainScreenState extends State<MainScreen> {
           };
       }
 
+      outbound["tag"] = "proxy";
+
       var fullConfig = {
         "log": {"loglevel": "warning"},
         "inbounds": [
           {
+            "tag": "socks",
             "port": 10808,
             "listen": "127.0.0.1",
             "protocol": "socks",
-            "settings": {"auth": "noauth", "udp": true}
+            "sniffing": {
+              "enabled": true,
+              "destOverride": ["http", "tls"],
+              "routeOnly": false
+            },
+            "settings": {"auth": "noauth", "udp": true, "allowTransparent": false}
           },
           {
+            "tag": "http",
             "port": 10809,
             "listen": "127.0.0.1",
             "protocol": "http",
-            "settings": {}
+            "sniffing": {
+              "enabled": true,
+              "destOverride": ["http", "tls"],
+              "routeOnly": false
+            },
+            "settings": {"auth": "noauth", "udp": true, "allowTransparent": false}
           }
         ],
         "outbounds": [
           outbound,
-          {"protocol": "freedom", "tag": "direct"}
+          {"protocol": "freedom", "tag": "direct"},
+          {"protocol": "blackhole", "tag": "block"}
         ],
+        "routing": {
+          "domainStrategy": "AsIs",
+          "rules": [
+            {
+              "type": "field",
+              "outboundTag": "direct",
+              "ip": ["geoip:private"]
+            }
+          ]
+        },
         "dns": {
             "servers": ["1.1.1.1", "8.8.8.8", "localhost"]
         }
