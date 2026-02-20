@@ -259,7 +259,7 @@ class ConfigParser {
         jsonStr = utf8.decode(base64Decode(b64));
       } catch (e) {
         // Fallback to URL-safe base64 decode if standard fails
-        jsonStr = utf8.decode(base64UrlDecode(b64));
+        jsonStr = utf8.decode(base64Url.decode(b64));
       }
       
       Map<String, dynamic> data = jsonDecode(jsonStr);
