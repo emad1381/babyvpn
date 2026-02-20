@@ -27,14 +27,18 @@ jobs:
 
       - name: Install dependencies
         run: |
+          # We need to force flutter to generate the missing android folder
+          # by deleting our custom pubspec temporarily, running create, then restoring
           cd android_app
+          mv pubspec.yaml pubspec_backup.yaml
+          flutter create --platforms android --project-name baby_vpn .
+          mv pubspec_backup.yaml pubspec.yaml
+          # It generates its own main.dart, let's make sure ours is used
           flutter pub get
 
       - name: Build APK (Release)
         run: |
           cd android_app
-          flutter config --enable-android
-          flutter create . --platforms android
           flutter build apk --release
 
       - name: Upload APK
