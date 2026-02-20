@@ -40,11 +40,22 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  final FlutterV2ray _flutterV2ray = FlutterV2ray(
-    initOptions: FlutterV2rayInitOption(
-      notificationIconResourceId: "@mipmap/ic_launcher",
-    ),
-  );
+  late final FlutterV2ray _flutterV2ray;
+
+  @override
+  void initState() {
+    super.initState();
+    _flutterV2ray = FlutterV2ray(
+      onStatusChanged: (status) {
+        setState(() {
+          _v2rayStatus = status;
+          _isConnected = status.state == 'CONNECTED';
+        });
+      },
+    );
+    _initV2ray();
+    _loadConfigs();
+  }
 
   List<Map<String, dynamic>> _configs = [];
   int _selectedIndex = -1;
@@ -52,21 +63,8 @@ class _MainScreenState extends State<MainScreen> {
   V2RayStatus _v2rayStatus = V2RayStatus();
   bool _enableMux = false;
 
-  @override
-  void initState() {
-    super.initState();
-    _initV2ray();
-    _loadConfigs();
-  }
-
   Future<void> _initV2ray() async {
     await _flutterV2ray.initializeV2Ray();
-    _flutterV2ray.v2rayStatus.listen((status) {
-      setState(() {
-        _v2rayStatus = status;
-        _isConnected = status.state == 'CONNECTED';
-      });
-    });
   }
 
   Future<void> _loadConfigs() async {
