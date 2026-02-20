@@ -90,28 +90,36 @@ class _MainScreenState extends State<MainScreen> {
       return;
     }
 
-    String link = data.text!.trim();
-    Map<String, dynamic>? parsed;
+    String text = data.text!.trim();
+    List<String> lines = text.split(RegExp(r'[\n\r]+'));
+    int addedCount = 0;
     
-    if (link.startsWith("vless://")) {
-      parsed = ConfigParser.parseVless(link);
-    } else if (link.startsWith("vmess://")) {
-      parsed = ConfigParser.parseVmess(link);
-    } else if (link.startsWith("trojan://")) {
-      parsed = ConfigParser.parseTrojan(link);
-    } else {
-      _showSnack("Invalid link format. Supported: vless, vmess, trojan.");
-      return;
+    for (String line in lines) {
+      line = line.trim();
+      if (line.isEmpty) continue;
+      
+      Map<String, dynamic>? parsed;
+      if (line.startsWith("vless://")) {
+        parsed = ConfigParser.parseVless(line);
+      } else if (line.startsWith("vmess://")) {
+        parsed = ConfigParser.parseVmess(line);
+      } else if (line.startsWith("trojan://")) {
+        parsed = ConfigParser.parseTrojan(line);
+      }
+      
+      if (parsed != null) {
+        setState(() {
+          _configs.add(parsed!);
+        });
+        addedCount++;
+      }
     }
 
-    if (parsed != null) {
-      setState(() {
-        _configs.add(parsed!);
-      });
+    if (addedCount > 0) {
       _saveConfigs();
-      _showSnack("Added: ${parsed['alias']}");
+      _showSnack("Added $addedCount configuration(s).");
     } else {
-      _showSnack("Failed to parse the configuration.");
+      _showSnack("Failed to parse any valid configuration from clipboard.");
     }
   }
 
