@@ -117,7 +117,7 @@ class ConfigParser {
         case 'kcp':
           outbound["streamSettings"]["kcpSettings"] = {
               "header": { "type": headerType },
-              "seed": uri.queryParameters['seed'] ?? path
+              "seed": params['seed'] ?? path
           };
           break;
         case 'h2':
@@ -129,8 +129,8 @@ class ConfigParser {
           break;
         case 'quic':
           outbound["streamSettings"]["quicSettings"] = {
-              "security": uri.queryParameters['quicSecurity'] ?? 'none',
-              "key": uri.queryParameters['key'] ?? '',
+              "security": params['quicSecurity'] ?? 'none',
+              "key": params['key'] ?? '',
               "header": { "type": headerType }
           };
           break;
