@@ -36,6 +36,19 @@ jobs:
           # It generates its own main.dart, let's make sure ours is used
           flutter pub get
 
+      - name: Inject Android Permissions
+        run: |
+          cd android_app
+          # Inject VPN and Network permissions into the generated AndroidManifest.xml
+          sed -i -e '/<application/i \
+          <uses-permission android:name="android.permission.INTERNET" />\
+          <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />\
+          <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />\
+          <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />\
+          <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />\
+          <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />\
+          ' android/app/src/main/AndroidManifest.xml
+
       - name: Build APK (Release)
         run: |
           cd android_app

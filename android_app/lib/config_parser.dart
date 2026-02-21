@@ -5,31 +5,50 @@ class ConfigParser {
     if (!link.startsWith("vless://")) return null;
     
     try {
-      int hashIndex = link.indexOf('#');
+      // Parse manually to avoid Dart Uri.parse bugs with complex encoded fragments and paths
+      int atIndex = link.indexOf('@');
+      final uuid = link.substring(8, atIndex);
+      
+      String remainder = link.substring(atIndex + 1);
+      int hashIndex = remainder.indexOf('#');
+      String alias = "VLess Config";
       if (hashIndex != -1) {
-        String base = link.substring(0, hashIndex);
-        String fragment = link.substring(hashIndex + 1);
-        try { fragment = Uri.decodeComponent(fragment); } catch(e) {}
-        link = base + '#' + Uri.encodeComponent(fragment);
+        String fragment = remainder.substring(hashIndex + 1);
+        try { alias = Uri.decodeComponent(fragment); } catch(e) { alias = fragment; }
+        remainder = remainder.substring(0, hashIndex);
       }
-      final uri = Uri.parse(link);
-      final uuid = uri.userInfo;
-      final address = uri.host;
-      final port = uri.hasPort ? uri.port : 443;
-      final alias = uri.fragment.isNotEmpty ? Uri.decodeComponent(uri.fragment) : "VLess Config";
 
-      final net = uri.queryParameters['type'] ?? 'tcp';
-      final security = uri.queryParameters['security'] ?? 'none';
-      final path = uri.queryParameters['path'] ?? '/';
-      final host = uri.queryParameters['host'] ?? '';
-      final sniParam = uri.queryParameters['sni'] ?? '';
-      final fp = uri.queryParameters['fp'] ?? '';
-      final alpnStr = uri.queryParameters['alpn'] ?? '';
-      final serviceName = uri.queryParameters['serviceName'] ?? '';
-      final headerType = uri.queryParameters['headerType'] ?? 'none';
-      final mode = uri.queryParameters['mode'] ?? 'auto';
+      int queryIndex = remainder.indexOf('?');
+      String addressPort = queryIndex != -1 ? remainder.substring(0, queryIndex) : remainder;
+      String queryString = queryIndex != -1 ? remainder.substring(queryIndex + 1) : "";
 
-      final bool allowInsecure = (uri.queryParameters['allowInsecure'] == '1' || uri.queryParameters['allowInsecure'] == 'true' || uri.queryParameters['insecure'] == '1' || uri.queryParameters['insecure'] == 'true');
+      List<String> apParts = addressPort.split(':');
+      final address = apParts[0];
+      final port = apParts.length > 1 ? int.tryParse(apParts[1]) ?? 443 : 443;
+
+      Map<String, String> params = {};
+      for (String pair in queryString.split('&')) {
+        int eqIndex = pair.indexOf('=');
+        if (eqIndex != -1) {
+          String key = pair.substring(0, eqIndex);
+          String val = pair.substring(eqIndex + 1);
+          try { val = Uri.decodeComponent(val); } catch(e) {}
+          params[key] = val;
+        }
+      }
+
+      final net = params['type'] ?? 'tcp';
+      final security = params['security'] ?? 'none';
+      final path = params['path'] ?? '/';
+      final host = params['host'] ?? '';
+      final sniParam = params['sni'] ?? '';
+      final fp = params['fp'] ?? '';
+      final alpnStr = params['alpn'] ?? '';
+      final serviceName = params['serviceName'] ?? '';
+      final headerType = params['headerType'] ?? 'none';
+      final mode = params['mode'] ?? 'auto';
+
+      final bool allowInsecure = (params['allowInsecure'] == '1' || params['allowInsecure'] == 'true' || params['insecure'] == '1' || params['insecure'] == 'true');
 
       final sni = (host.isNotEmpty && sniParam.isEmpty) ? host : sniParam;
 
