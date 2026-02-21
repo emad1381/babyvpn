@@ -75,6 +75,34 @@
             }
         },
         "is_pinging_active": false,
-        "last_ping": 1096
+        "last_ping": 1110
+    },
+    {
+        "alias": "116829+|+\ud83c\uddf3\ud83c\uddf1+NL",
+        "link": "vless://e1bf5244-8517-4790-9bf3-2aef1dedaa89@45.90.74.59:2052?encryption=none&security=none&type=tcp&headerType=none#116829%2B%7C%2B%F0%9F%87%B3%F0%9F%87%B1%2BNL",
+        "outbound": {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "45.90.74.59",
+                        "port": 2052,
+                        "users": [
+                            {
+                                "id": "e1bf5244-8517-4790-9bf3-2aef1dedaa89",
+                                "encryption": "none",
+                                "level": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "none"
+            }
+        },
+        "is_pinging_active": false,
+        "last_ping": 289
     }
 ]
